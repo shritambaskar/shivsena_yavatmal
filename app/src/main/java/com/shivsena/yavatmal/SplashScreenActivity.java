@@ -2,6 +2,11 @@ package com.shivsena.yavatmal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
@@ -39,11 +44,47 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-
+                checkConnection();
 
             }
         },SPALSH_SCREEN);
     }
 
+    private void checkConnection() {
+        ConnectivityManager manager = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = manager.getActiveNetworkInfo();
 
+        SharedPreferences preferences = getSharedPreferences(LoginActivity.FILE_NAME,MODE_PRIVATE);
+        String myEmail = preferences.getString(LoginActivity.MY_NAME,"");
+
+        if(null != activeNetwork){
+            if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI){
+                if (myEmail != ""){
+                    startActivity(new Intent(SplashScreenActivity.this,HomeActivity.class));
+                    SplashScreenActivity.this.finish();
+                }
+                else {
+                    Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                    SplashScreenActivity.this.finish();
+                }
+            }
+            else if (activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE){
+                if (myEmail != ""){
+                    startActivity(new Intent(SplashScreenActivity.this,HomeActivity.class));
+                    SplashScreenActivity.this.finish();
+                }
+                else {
+                    Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                    SplashScreenActivity.this.finish();
+                }
+            }
+        }
+        else{
+            Intent intent= new Intent(SplashScreenActivity.this,NoInternetConnection.class);
+            startActivity(intent);
+            SplashScreenActivity.this.finish();
+        }
+    }
 }
