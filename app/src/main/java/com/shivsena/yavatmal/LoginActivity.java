@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
             editor.putString(MY_NAME,e);
             editor.apply();
             startActivity(new Intent(LoginActivity.this,HomeActivity.class));
+            LoginActivity.this.finish();
         }
         else{
             Toast.makeText(LoginActivity.this, "Login Failed...", Toast.LENGTH_SHORT).show();
