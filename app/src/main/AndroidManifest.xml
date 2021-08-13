@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.शिवसेनायवतमाळ">
         <activity
+            android:name=".yavtmalvidhansabha.YavatmalVidhansabhaActivity"
+            android:exported="true"
+            android:label="यवतमाळ विधानसभा"/>
+        <activity
             android:name=".NextActivity"
             android:exported="true" />
         <activity android:name=".LoginActivity" />
