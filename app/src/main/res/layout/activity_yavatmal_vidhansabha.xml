@@ -97,7 +97,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/rounded_bt"
-            android:text="तालुका युवा प्रमुख"
+            android:text="तालुका युवा अधिकरी"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="@+id/taluka_sanghtika"
