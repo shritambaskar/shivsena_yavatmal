@@ -22,7 +22,6 @@
             android:text="उपजिल्हा प्रमुख"
             android:textColor="@color/black"
             android:textSize="24sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -41,9 +40,68 @@
             android:text="उपजिल्हा संघटीका"
             android:textColor="@color/black"
             android:textSize="24sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/upjilha_pramukh"
             app:layout_constraintStart_toStartOf="@+id/upjilha_pramukh"
             app:layout_constraintTop_toBottomOf="@+id/upjilha_pramukh" />
+
+        <Button
+            android:id="@+id/upjilha_yuva_adhikari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_bt"
+            android:text="उपजिल्हा युवा अधिकारी"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/upjilha_sanghtika"
+            app:layout_constraintStart_toStartOf="@+id/upjilha_sanghtika"
+            app:layout_constraintTop_toBottomOf="@+id/upjilha_sanghtika" />
+
+        <Button
+            android:id="@+id/taluka_pramukh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_bt"
+            android:text="तालुका प्रमुख"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/upjilha_yuva_adhikari"
+            app:layout_constraintStart_toStartOf="@+id/upjilha_yuva_adhikari"
+            app:layout_constraintTop_toBottomOf="@+id/upjilha_yuva_adhikari" />
+
+        <Button
+            android:id="@+id/taluka_sanghtika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_bt"
+            android:text="तालुका संघटीका"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/taluka_pramukh"
+            app:layout_constraintStart_toStartOf="@+id/taluka_pramukh"
+            app:layout_constraintTop_toBottomOf="@+id/taluka_pramukh" />
+
+        <Button
+            android:id="@+id/taluka_yuva_adhikari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_bt"
+            android:text="तालुका युवा प्रमुख"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/taluka_sanghtika"
+            app:layout_constraintStart_toStartOf="@+id/taluka_sanghtika"
+            app:layout_constraintTop_toBottomOf="@+id/taluka_sanghtika" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
