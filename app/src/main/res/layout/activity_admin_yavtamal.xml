@@ -92,7 +92,10 @@
     <Spinner
         android:id="@+id/yavatmal_vidhansabha_spinner"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_et"
+        android:entries="@array/yavatmal_vidhansabha"
+        android:paddingStart="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/yavatmal_vidhansabha_phone"
         app:layout_constraintHorizontal_bias="0.0"
