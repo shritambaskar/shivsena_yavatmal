@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">शिवसेना यवतमाळ</string>
 
+    <string-array name="yavatmal_vidhansabha">
+        <item>पद निवडा</item>
+        <item>उपजिल्हा प्रमुख</item>
+        <item>उपजिल्हा संघटीका</item>
+        <item>उपजिल्हा युवा अधिकारी</item>
+        <item>तालुका प्रमुख</item>
+        <item>तालुका संघटीका</item>
+        <item>तालुका युवा अधिकारी</item>
+        <item>उपतालुका प्रमुख</item>
+        <item>उपतालुका संघटीका</item>
+        <item>उपतालुका युवा अधिकारी</item>
+        <item>शाखा प्रमुख</item>
+        <item>शाखा संघटीका</item>
+        <item>शाखा युवा अधिकारी</item>
+
+    </string-array>
 </resources>
