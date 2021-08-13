@@ -53,6 +53,7 @@
         android:drawableStart="@drawable/ic_password"
         android:drawableTint="@color/black"
         android:drawablePadding="12dp"
+        android:textColor="@color/black"
         android:hint="Enter Password"
         android:textColorHint="@color/black"
         android:paddingStart="20dp"
