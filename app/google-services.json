@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "267887433823",
+    "project_id": "shivsena-yavatmal",
+    "storage_bucket": "shivsena-yavatmal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267887433823:android:18c93b6d03b3dbccfb23ea",
+        "android_client_info": {
+          "package_name": "com.shivsena.yavatmal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267887433823-ukqi04dh3bolunei65vfk3rgoqhos3d5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWZQ9uIXD-bs8MHgzfRpfA-lufdj0bLAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267887433823-ukqi04dh3bolunei65vfk3rgoqhos3d5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
