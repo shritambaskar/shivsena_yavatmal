@@ -52,6 +52,10 @@ public class AdminYavtamalActivity extends AppCompatActivity {
         String key = mRef.push().getKey();
         mRef.child(post).child(key).setValue(details);
         Toast.makeText(AdminYavtamalActivity.this, "Registered.....", Toast.LENGTH_SHORT).show();
+
+        yavatmal_vidhansabha_name.setText("");
+        yavatmal_vidhansabha_phone.setText("");
+        yavatmal_vidhansabha_spinner.setSelection(0);
     }
 
     private void initialise() {
