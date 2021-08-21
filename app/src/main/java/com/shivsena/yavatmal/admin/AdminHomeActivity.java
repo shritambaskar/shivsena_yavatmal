@@ -34,5 +34,14 @@ public class AdminHomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        findViewById(R.id.btn_admin_digras).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminHomeActivity.this,AdminYavtamalActivity.class);
+                String vidhansabha = "दिग्रस_विधानसभा";
+                intent.putExtra("vidhansabha",vidhansabha);
+                startActivity(intent);
+            }
+        });
     }
 }
