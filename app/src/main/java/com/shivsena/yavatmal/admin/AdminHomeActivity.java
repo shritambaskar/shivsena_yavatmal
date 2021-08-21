@@ -19,7 +19,19 @@ public class AdminHomeActivity extends AppCompatActivity {
         findViewById(R.id.btn_admin_yavatmal_vidhansabha).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(AdminHomeActivity.this,AdminYavtamalActivity.class));
+                Intent intent = new Intent(AdminHomeActivity.this,AdminYavtamalActivity.class);
+                String vidhansabha = "यवतमाळ_विधानसभा";
+                intent.putExtra("vidhansabha",vidhansabha);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.btn_admin_umarkhed).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminHomeActivity.this,AdminYavtamalActivity.class);
+                String vidhansabha = "उमरखेड_विधानसभा";
+                intent.putExtra("vidhansabha",vidhansabha);
+                startActivity(intent);
             }
         });
     }

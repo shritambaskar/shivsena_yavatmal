@@ -12,9 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.शिवसेनायवतमाळ">
         <activity
+            android:name=".yavtmalvidhansabha.UmerkhedDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".yavtmalvidhansabha.UmerkhedVidhansabhaActivity"
+            android:label="उमरखेड विधानसभा"
+            android:exported="true" />
+        <activity
             android:name=".yavtmalvidhansabha.YavatmalDetailsActivity"
             android:exported="true"
-            android:label="यवतमाळ विधानसभा"/>
+            android:label="यवतमाळ विधानसभा" />
         <activity
             android:name=".admin.AdminYavtamalActivity"
             android:exported="true" />
@@ -33,8 +40,9 @@
             android:exported="true" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".NoInternetConnection"
-            android:label="इंटरनेट सेवा"/>
+        <activity
+            android:name=".NoInternetConnection"
+            android:label="इंटरनेट सेवा" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

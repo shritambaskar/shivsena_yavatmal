@@ -7,11 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.shivsena.yavatmal.yavtmalvidhansabha.UmerkhedVidhansabhaActivity;
 import com.shivsena.yavatmal.yavtmalvidhansabha.YavatmalVidhansabhaActivity;
 
 public class NextActivity extends AppCompatActivity {
 
-    private Button btn_yavatmal_vidhansabha;
+    private Button btn_yavatmal_vidhansabha,btn_umarkhed;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,13 @@ public class NextActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(NextActivity.this, YavatmalVidhansabhaActivity.class));
+            }
+        });
+        btn_umarkhed = findViewById(R.id.btn_umarkhed);
+        btn_umarkhed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(NextActivity.this, UmerkhedVidhansabhaActivity.class));
             }
         });
     }
