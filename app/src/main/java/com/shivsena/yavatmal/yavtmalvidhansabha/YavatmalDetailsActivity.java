@@ -33,7 +33,7 @@ public class YavatmalDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yavatmal_details);
         mDatabase = FirebaseDatabase.getInstance();
-        String post = getIntent().getStringExtra("उपजिल्हा प्रमुख");
+        String post = getIntent().getStringExtra("post");
         mRef = mDatabase.getReference("यवतमाळ_विधानसभा").child(post);
         recyclerView = findViewById(R.id.yavatmal_recyclerView);
         recyclerView.setHasFixedSize(true);

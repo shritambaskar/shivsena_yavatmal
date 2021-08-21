@@ -13,7 +13,8 @@
         android:theme="@style/Theme.शिवसेनायवतमाळ">
         <activity
             android:name=".yavtmalvidhansabha.YavatmalDetailsActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="यवतमाळ विधानसभा"/>
         <activity
             android:name=".admin.AdminYavtamalActivity"
             android:exported="true" />

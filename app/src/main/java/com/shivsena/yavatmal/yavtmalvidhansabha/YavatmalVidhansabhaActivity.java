@@ -19,7 +19,7 @@ import java.util.List;
 
 public class YavatmalVidhansabhaActivity extends AppCompatActivity {
 
-    private Button upjilha_pramukh;
+    private Button upjilha_pramukh,upjilha_sanghatika,upjilha_yuva_adhikari;
 
 
     @Override
@@ -27,20 +27,36 @@ public class YavatmalVidhansabhaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yavatmal_vidhansabha);
 
-
-
         initialise();
         this.upjilha_pramukh.setOnClickListener(this::upjilhaPramukh);
+        this.upjilha_sanghatika.setOnClickListener(this::upjilhaSanghatika);
+        this.upjilha_yuva_adhikari.setOnClickListener(this::upjilhaYuvaAdhikari);
+    }
+
+    private void upjilhaYuvaAdhikari(View view) {
+        String post = "उपजिल्हा युवा अधिकारी";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalDetailsActivity.class);
+        intent.putExtra("post",post);
+        startActivity(intent);
+    }
+
+    private void upjilhaSanghatika(View view) {
+        String post = "उपजिल्हा संघटीका";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalDetailsActivity.class);
+        intent.putExtra("post",post);
+        startActivity(intent);
     }
 
     private void upjilhaPramukh(View view) {
         String post = "उपजिल्हा प्रमुख";
         Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalDetailsActivity.class);
-        intent.putExtra("उपजिल्हा प्रमुख",post);
+        intent.putExtra("post",post);
         startActivity(intent);
     }
 
     private void initialise() {
         upjilha_pramukh = findViewById(R.id.upjilha_pramukh);
+        upjilha_sanghatika=findViewById(R.id.upjilha_sanghtika);
+        upjilha_yuva_adhikari=findViewById(R.id.upjilha_yuva_adhikari);
     }
 }
