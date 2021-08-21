@@ -19,8 +19,10 @@
             android:src="@drawable/shiv_sena_logo"
             app:layout_constraintBottom_toTopOf="@+id/upjilha_pramukh"
             app:layout_constraintEnd_toEndOf="@+id/upjilha_pramukh"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="@+id/upjilha_pramukh"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139" />
 
         <TextView
             android:id="@+id/tv_yavatmal_vidhansabha"
@@ -185,7 +187,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/rounded_bt"
-            android:text="शाखा प्रमुख"
+            android:text="विभाग प्रमुख"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="@+id/uptaluka_yuva_adhikari"
@@ -200,7 +202,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/rounded_bt"
-            android:text="शाखा संघटीका"
+            android:text="विभाग संघटीका"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="@+id/vibhag_pramukh"
@@ -215,11 +217,56 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/rounded_bt"
-            android:text="शाखा युवा अधिकरी"
+            android:text="विभाग युवा अधिकरी"
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="@+id/vibhag_sanghtika"
             app:layout_constraintStart_toStartOf="@+id/vibhag_sanghtika"
             app:layout_constraintTop_toBottomOf="@+id/vibhag_sanghtika" />
+
+        <Button
+            android:id="@+id/shakha_pramukh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_bt"
+            android:text="शाखा प्रमुख"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/vibhag_yuva_adhikari"
+            app:layout_constraintStart_toStartOf="@+id/vibhag_yuva_adhikari"
+            app:layout_constraintTop_toBottomOf="@+id/vibhag_yuva_adhikari" />
+
+        <Button
+            android:id="@+id/shakha_sanghtika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_bt"
+            android:text="शाखा संघटीका"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/shakha_pramukh"
+            app:layout_constraintStart_toStartOf="@+id/shakha_pramukh"
+            app:layout_constraintTop_toBottomOf="@+id/shakha_pramukh" />
+
+        <Button
+            android:id="@+id/shakha_yuva_adhikari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_bt"
+            android:text="शाखा युवा अधिकरी"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/shakha_sanghtika"
+            app:layout_constraintStart_toStartOf="@+id/shakha_sanghtika"
+            app:layout_constraintTop_toBottomOf="@+id/shakha_sanghtika" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

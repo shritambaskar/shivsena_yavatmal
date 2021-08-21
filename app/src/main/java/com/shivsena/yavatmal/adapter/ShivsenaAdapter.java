@@ -37,9 +37,9 @@ public class ShivsenaAdapter extends RecyclerView.Adapter<ShivsenaAdapter.Shivse
     public void onBindViewHolder(@NonNull ShivsenaViewHolder holder, int position) {
 
         ShivsenaDetails data = mList.get(position);
-        holder.post.setText(data.getPost());
-        holder.name.setText(data.getName());
-        holder.phone.setText(data.getMobile());
+        holder.post.setText("पद : "+data.getPost());
+        holder.name.setText("नाव : "+data.getName());
+        holder.phone.setText("दूरध्वनि : "+data.getMobile());
     }
 
     @Override
