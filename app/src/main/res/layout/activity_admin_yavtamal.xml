@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_500"
+    android:background="@color/white"
     tools:context=".admin.AdminYavtamalActivity">
 
     <TextView
@@ -16,7 +16,7 @@
         android:fontFamily="@font/audiowide"
         android:text="Add Members"
         android:textSize="38sp"
-        android:textColor="@color/black"
+        android:textColor="@color/shivsena"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -33,12 +33,12 @@
         android:backgroundTint="@color/white"
         android:drawableStart="@drawable/ic_name"
         android:drawablePadding="12dp"
-        android:drawableTint="@color/black"
+        android:drawableTint="@color/shivsena"
         android:hint="क्रुपया नाव टाका"
         android:inputType="text"
         android:paddingStart="20dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/shivsena"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -52,11 +52,11 @@
         android:background="@drawable/rounded_et"
         android:backgroundTint="@color/white"
         android:drawableStart="@drawable/ic_phone"
-        android:drawableTint="@color/black"
+        android:drawableTint="@color/shivsena"
         android:drawablePadding="12dp"
         android:textColor="@color/black"
         android:hint="क्रुपया दुरध्वनि क्रमांक टाका"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/shivsena"
         android:inputType="number"
         android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="@+id/yavatmal_vidhansabha_name"
@@ -87,7 +87,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shiv_sena_logo" />
+        app:srcCompat="@drawable/shivsena_logo_new" />
 
     <Spinner
         android:id="@+id/yavatmal_vidhansabha_spinner"

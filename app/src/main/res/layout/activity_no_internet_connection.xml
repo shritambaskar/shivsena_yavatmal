@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_500"
+    android:background="@color/white"
     tools:context=".NoInternetConnection">
 
     <ImageView
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Oop's !!!!!!"
-        android:textColor="@android:color/black"
+        android:textColor="@color/shivsena"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="इंटरनेट सेवा उपलब्ध नाही"
-        android:textColor="@android:color/black"
+        android:textColor="@color/shivsena"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
         app:layout_constraintHorizontal_bias="0.491"
@@ -53,7 +53,7 @@
         android:layout_marginTop="36dp"
         android:background="@drawable/rounded_bt"
         android:text="पुन्हा प्रयत्न करा"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/textView5"
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="@+id/textView5"

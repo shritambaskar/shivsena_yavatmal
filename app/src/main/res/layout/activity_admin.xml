@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_500"
+    android:background="@color/white"
     tools:context=".AdminActivity">
 
     <TextView
@@ -16,7 +16,7 @@
         android:fontFamily="@font/audiowide"
         android:text="Admin Login"
         android:textSize="38sp"
-        android:textColor="@color/black"
+        android:textColor="@color/shivsena"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -34,10 +34,10 @@
         android:textColor="@color/black"
         android:inputType="textEmailAddress"
         android:drawableStart="@drawable/ic_name"
-        android:drawableTint="@color/black"
+        android:drawableTint="@color/shivsena"
         android:drawablePadding="12dp"
         android:hint="Enter Email"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/shivsena"
         android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="1.0"
@@ -52,11 +52,11 @@
         android:background="@drawable/rounded_et"
         android:backgroundTint="@color/white"
         android:drawableStart="@drawable/ic_password"
-        android:drawableTint="@color/black"
+        android:drawableTint="@color/shivsena"
         android:drawablePadding="12dp"
         android:textColor="@color/black"
         android:hint="Enter Password"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/shivsena"
         android:inputType="textPassword"
         android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="@+id/admin_email"
@@ -69,7 +69,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_bt"
-        android:backgroundTint="@color/black"
         android:text="GO"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,10 +82,11 @@
         android:id="@+id/imageView"
         android:layout_width="405dp"
         android:layout_height="157dp"
+        app:srcCompat="@drawable/shivsena_logo_new"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shiv_sena_logo" />
+        app:layout_constraintTop_toTopOf="parent"/>
+        <!---->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
