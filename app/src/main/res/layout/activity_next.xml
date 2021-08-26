@@ -28,7 +28,7 @@
         android:id="@+id/btn_digras"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:text="दिग्रस विधानसभा"
         android:background="@drawable/rounded_bt"
         android:textColor="@color/white"

@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="24sp"
-            android:textColor="@color/black"
+            android:textColor="@color/shivsena"
             android:textStyle="bold"
             android:text="पद :"
             android:layout_marginLeft="10dp"/>
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:text="नाव :"
-            android:textColor="@color/black"
+            android:textColor="@color/shivsena"
             android:layout_marginLeft="30dp"/>
 
         <TextView
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:text="दूरध्वनि :"
-            android:textColor="@color/black"
+            android:textColor="@color/shivsena"
             android:layout_marginLeft="30dp"/>
     </LinearLayout>
 
