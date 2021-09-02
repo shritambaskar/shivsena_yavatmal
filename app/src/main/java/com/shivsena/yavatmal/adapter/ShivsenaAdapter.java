@@ -1,6 +1,7 @@
 package com.shivsena.yavatmal.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,8 +39,11 @@ public class ShivsenaAdapter extends RecyclerView.Adapter<ShivsenaAdapter.Shivse
 
         ShivsenaDetails data = mList.get(position);
         holder.post.setText("पद : "+data.getPost());
+        holder.post.setTextColor(Color.parseColor("#fa6604"));
         holder.name.setText("नाव : "+data.getName());
+        holder.name.setTextColor(Color.parseColor("#fa6604"));
         holder.phone.setText("दूरध्वनि : "+data.getMobile());
+        holder.phone.setTextColor(Color.parseColor("#fa6604"));
     }
 
     @Override
