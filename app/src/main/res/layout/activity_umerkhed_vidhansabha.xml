@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@color/background"
     tools:context=".yavtmalvidhansabha.UmerkhedVidhansabhaActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,9 +14,9 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:src="@drawable/shivsena_logo_new"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
 
             app:layout_constraintBottom_toTopOf="@+id/umerkhed_upjilha_pramukh"
             app:layout_constraintEnd_toEndOf="@+id/umerkhed_upjilha_pramukh"
