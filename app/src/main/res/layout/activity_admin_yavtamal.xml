@@ -8,7 +8,7 @@
     tools:context=".admin.AdminYavtamalActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_addPlace"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.267" />
 
     <EditText
-        android:id="@+id/yavatmal_vidhansabha_name"
+        android:id="@+id/et_addPlace"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
@@ -39,10 +39,10 @@
         android:paddingStart="20dp"
         android:textColor="@color/black"
         android:textColorHint="@color/shivsena"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/tv_addPlace"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/tv_addPlace"
+        app:layout_constraintTop_toBottomOf="@+id/tv_addPlace" />
 
     <EditText
         android:id="@+id/yavatmal_vidhansabha_phone"
@@ -59,13 +59,13 @@
         android:textColorHint="@color/shivsena"
         android:inputType="number"
         android:paddingStart="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/yavatmal_vidhansabha_name"
+        app:layout_constraintEnd_toEndOf="@+id/et_addPlace"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/yavatmal_vidhansabha_name"
-        app:layout_constraintTop_toBottomOf="@+id/yavatmal_vidhansabha_name" />
+        app:layout_constraintStart_toStartOf="@+id/et_addPlace"
+        app:layout_constraintTop_toBottomOf="@+id/et_addPlace" />
 
     <Button
-        android:id="@+id/yavatmal_vidhansabha_login"
+        android:id="@+id/btn_addPlace"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_bt"
@@ -83,7 +83,7 @@
         android:id="@+id/imageView"
         android:layout_width="405dp"
         android:layout_height="157dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/tv_addPlace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -102,5 +102,21 @@
         app:layout_constraintStart_toStartOf="@+id/yavatmal_vidhansabha_phone"
         app:layout_constraintTop_toBottomOf="@+id/yavatmal_vidhansabha_phone"
         app:layout_constraintVertical_bias="0.065" />
+
+    <Button
+        android:id="@+id/btn_place"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_bt"
+        android:backgroundTint="@color/black"
+        android:text="Add Place"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_addPlace"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_addPlace"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addPlace"
+        app:layout_constraintVertical_bias="0.064" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
