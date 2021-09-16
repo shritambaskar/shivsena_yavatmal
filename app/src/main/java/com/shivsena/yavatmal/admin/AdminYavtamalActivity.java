@@ -66,10 +66,10 @@ public class AdminYavtamalActivity extends AppCompatActivity {
     }
 
     private void initialise() {
-        yavatmal_vidhansabha_login = findViewById(R.id.btn_addPlace);
+        yavatmal_vidhansabha_login = findViewById(R.id.btn_addMember);
         yavatmal_vidhansabha_name = findViewById(R.id.et_addPlace);
         yavatmal_vidhansabha_phone = findViewById(R.id.yavatmal_vidhansabha_phone);
         yavatmal_vidhansabha_spinner = findViewById(R.id.yavatmal_vidhansabha_spinner);
-        addPlace = findViewById(R.id.btn_addPlace);
+        addPlace = findViewById(R.id.btn_addMember);
     }
 }
