@@ -4,45 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".admin.AdminDashboardActivity">
 
     <Button
         android:id="@+id/btn_dash_taluka"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="71dp"
-        android:text="Button"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_bt"
+        android:text="तालुका जोडा"
+        android:textColor="@color/white"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_dash_gav"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Button"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_bt"
+        android:text="गाव जोडा"
+        android:textColor="@color/white"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/btn_dash_taluka"
         app:layout_constraintStart_toStartOf="@+id/btn_dash_taluka"
         app:layout_constraintTop_toBottomOf="@+id/btn_dash_taluka" />
 
     <Button
         android:id="@+id/btn_dash_add_member"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="67dp"
-        android:text="Button"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_bt"
+        android:text="सदस्य जोडा"
+        android:textColor="@color/white"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/btn_dash_gav"
         app:layout_constraintStart_toStartOf="@+id/btn_dash_gav"
         app:layout_constraintTop_toBottomOf="@+id/btn_dash_gav" />
 
     <Button
         android:id="@+id/btn_dash_delete_member"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="67dp"
-        android:text="Button"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_bt"
+        android:text="सदस्य काढा"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btn_dash_add_member"
         app:layout_constraintStart_toStartOf="@+id/btn_dash_add_member"
-        app:layout_constraintTop_toBottomOf="@+id/btn_dash_add_member" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_dash_add_member"
+        app:layout_constraintVertical_bias="0.013" />
 </androidx.constraintlayout.widget.ConstraintLayout>
