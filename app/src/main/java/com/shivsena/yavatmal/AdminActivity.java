@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.shivsena.yavatmal.admin.AdminDashboardActivity;
 import com.shivsena.yavatmal.admin.AdminHomeActivity;
 
 public class AdminActivity extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class AdminActivity extends AppCompatActivity {
         if (admin_e.equals("adminshivsena.yavatmal@gmail.com")
                 && admin_p.equals("adminyavatmal")){
 
-            startActivity(new Intent(AdminActivity.this, AdminHomeActivity.class));
+            startActivity(new Intent(AdminActivity.this, AdminDashboardActivity.class));
             AdminActivity.this.finish();
         }
         else{
