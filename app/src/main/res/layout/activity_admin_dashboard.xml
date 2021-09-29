@@ -6,4 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".admin.AdminDashboardActivity">
 
+    <Button
+        android:id="@+id/btn_dash_taluka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dash_gav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/btn_dash_taluka"
+        app:layout_constraintStart_toStartOf="@+id/btn_dash_taluka"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dash_taluka" />
+
+    <Button
+        android:id="@+id/btn_dash_add_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/btn_dash_gav"
+        app:layout_constraintStart_toStartOf="@+id/btn_dash_gav"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dash_gav" />
+
+    <Button
+        android:id="@+id/btn_dash_delete_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/btn_dash_add_member"
+        app:layout_constraintStart_toStartOf="@+id/btn_dash_add_member"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dash_add_member" />
 </androidx.constraintlayout.widget.ConstraintLayout>
