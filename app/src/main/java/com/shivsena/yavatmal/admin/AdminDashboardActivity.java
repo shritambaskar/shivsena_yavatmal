@@ -34,6 +34,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
     }
 
     private void addTaluka(View view) {
+        startActivity(new Intent(AdminDashboardActivity.this,AddTalukaActivity.class));
     }
 
     private void initialise() {
