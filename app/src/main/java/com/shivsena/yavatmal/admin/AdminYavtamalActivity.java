@@ -28,6 +28,7 @@ public class AdminYavtamalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_yavtamal);
         String vidhansabha = getIntent().getStringExtra("vidhansabha");
+        setTitle(vidhansabha);
         mDatabase = FirebaseDatabase.getInstance();
         mRef = mDatabase.getReference().child(vidhansabha);
         initialise();

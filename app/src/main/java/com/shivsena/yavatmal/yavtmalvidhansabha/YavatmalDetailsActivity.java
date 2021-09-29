@@ -34,7 +34,7 @@ public class YavatmalDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_yavatmal_details);
         mDatabase = FirebaseDatabase.getInstance();
         String post = getIntent().getStringExtra("post");
-        mRef = mDatabase.getReference("यवतमाळ_विधानसभा").child(post);
+        mRef = mDatabase.getReference("यवतमाळ विधानसभा").child(post);
         recyclerView = findViewById(R.id.yavatmal_recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

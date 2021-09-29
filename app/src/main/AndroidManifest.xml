@@ -30,7 +30,8 @@
             android:exported="true" />
         <activity
             android:name=".admin.AdminHomeActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="सदस्य जोडा"/>
         <activity
             android:name=".AdminActivity"
             android:exported="true" />

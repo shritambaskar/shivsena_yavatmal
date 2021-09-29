@@ -34,7 +34,7 @@ public class UmerkhedDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_umerkhed_details);
         mDatabase = FirebaseDatabase.getInstance();
         String post = getIntent().getStringExtra("post");
-        mRef = mDatabase.getReference("उमरखेड_विधानसभा").child(post);
+        mRef = mDatabase.getReference("उमरखेड विधानसभा").child(post);
         recyclerView = findViewById(R.id.umerkhed_recyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

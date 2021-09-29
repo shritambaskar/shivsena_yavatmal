@@ -20,7 +20,7 @@ public class AdminHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AdminHomeActivity.this,AdminYavtamalActivity.class);
-                String vidhansabha = "यवतमाळ_विधानसभा";
+                String vidhansabha = "यवतमाळ विधानसभा";
                 intent.putExtra("vidhansabha",vidhansabha);
                 startActivity(intent);
             }
@@ -29,7 +29,7 @@ public class AdminHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AdminHomeActivity.this,AdminYavtamalActivity.class);
-                String vidhansabha = "उमरखेड_विधानसभा";
+                String vidhansabha = "उमरखेड विधानसभा";
                 intent.putExtra("vidhansabha",vidhansabha);
                 startActivity(intent);
             }
@@ -38,7 +38,7 @@ public class AdminHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AdminHomeActivity.this,AdminYavtamalActivity.class);
-                String vidhansabha = "दिग्रस_विधानसभा";
+                String vidhansabha = "दिग्रस विधानसभा";
                 intent.putExtra("vidhansabha",vidhansabha);
                 startActivity(intent);
             }
