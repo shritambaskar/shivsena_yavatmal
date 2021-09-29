@@ -20,4 +20,10 @@
         <item>शाखा युवा अधिकारी</item>
 
     </string-array>
+    <string-array name="taluka">
+        <item>क्रुपया विधासभा निवडा</item>
+        <item>यवतमाळ विधासभा</item>
+        <item>दिग्रस विधासभा</item>
+        <item>उमरखेड विधासभा</item>
+    </string-array>
 </resources>

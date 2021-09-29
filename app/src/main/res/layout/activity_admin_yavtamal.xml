@@ -69,7 +69,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_bt"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/shivsena"
         android:text="GO"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
