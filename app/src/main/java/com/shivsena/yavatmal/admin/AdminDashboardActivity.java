@@ -37,9 +37,9 @@ public class AdminDashboardActivity extends AppCompatActivity {
     }
 
     private void initialise() {
-        addTaluka.findViewById(R.id.btn_dash_taluka);
-        addGav.findViewById(R.id.btn_dash_gav);
-        addMember.findViewById(R.id.btn_dash_add_member);
-        deleteMember.findViewById(R.id.btn_dash_delete_member);
+        addTaluka = findViewById(R.id.btn_dash_taluka);
+        addGav = findViewById(R.id.btn_dash_gav);
+        addMember = findViewById(R.id.btn_dash_add_member);
+        deleteMember = findViewById(R.id.btn_dash_delete_member);
     }
 }
