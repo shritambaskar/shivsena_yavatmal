@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.शिवसेनायवतमाळ">
         <activity
+            android:name=".admin.AdminDashboardActivity"
+            android:exported="true" />
+        <activity
             android:name=".yavtmalvidhansabha.UmerkhedDetailsActivity"
             android:exported="true" />
         <activity
