@@ -28,7 +28,8 @@ public class AdminActivity extends AppCompatActivity {
         String admin_e= admin_email.getText().toString();
         String admin_p = admin_pass.getText().toString();
 
-        if (admin_e.equals("adminshivsena.yavatmal@gmail.com")&&admin_p.equals("adminyavatmal")){
+        if (admin_e.equals("adminshivsena.yavatmal@gmail.com")
+                && admin_p.equals("adminyavatmal")){
 
             startActivity(new Intent(AdminActivity.this, AdminHomeActivity.class));
             AdminActivity.this.finish();
