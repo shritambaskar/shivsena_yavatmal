@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.302" />
 
     <EditText
-        android:id="@+id/et_add_taluka"
+        android:id="@+id/et_add_gaon"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="44dp"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/taluka_spinner" />
 
     <Button
-        android:id="@+id/btn_add_taluka"
+        android:id="@+id/btn_add_gaon"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -51,9 +51,9 @@
         android:backgroundTint="@color/shivsena"
         android:text="GO"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/et_add_taluka"
+        app:layout_constraintEnd_toEndOf="@+id/et_add_gaon"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/et_add_taluka"
-        app:layout_constraintTop_toBottomOf="@+id/et_add_taluka" />
+        app:layout_constraintStart_toStartOf="@+id/et_add_gaon"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_gaon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -53,7 +53,7 @@ public class AddTalukaActivity extends AppCompatActivity {
 
     private void initialise() {
         sp_chooseVidhansabha = findViewById(R.id.taluka_spinner);
-        et_taluka = findViewById(R.id.et_add_taluka);
-        add = findViewById(R.id.btn_add_taluka);
+        et_taluka = findViewById(R.id.et_add_gaon);
+        add = findViewById(R.id.btn_add_gaon);
     }
 }

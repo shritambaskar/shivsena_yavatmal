@@ -31,6 +31,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
     }
 
     private void addGav(View view) {
+        startActivity(new Intent(AdminDashboardActivity.this,AddGaonActivity.class));
     }
 
     private void addTaluka(View view) {
