@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -43,6 +45,7 @@ public class AddGaonActivity extends AppCompatActivity {
         this.gaonVidhanSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
                 myVidhanSabha = gaonVidhanSpinner.getSelectedItem().toString();
                 mDatabase = FirebaseDatabase.getInstance();
                 mRef = mDatabase.getReference(myVidhanSabha).child("तालुक्याचे नाव");
@@ -59,6 +62,7 @@ public class AddGaonActivity extends AppCompatActivity {
             }
 
         });
+
     }
 
     private void showData() {

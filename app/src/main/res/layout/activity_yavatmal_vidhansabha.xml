@@ -16,6 +16,7 @@
             android:id="@+id/imageView2"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:elevation="10dp"
             android:src="@drawable/shivsena_logo_new"
             app:layout_constraintBottom_toTopOf="@+id/upjilha_pramukh"
             app:layout_constraintEnd_toEndOf="@+id/upjilha_pramukh"
@@ -37,6 +38,7 @@
             android:textSize="32sp"
             android:textColor="@color/shivsena"
             android:textStyle="bold"
+            android:elevation="10dp"
             app:layout_constraintBottom_toTopOf="@+id/upjilha_pramukh"
             app:layout_constraintEnd_toEndOf="@+id/imageView2"
             app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -53,6 +55,7 @@
             android:text="उपजिल्हा प्रमुख"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -71,6 +74,7 @@
             android:text="उपजिल्हा संघटीका"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/upjilha_pramukh"
             app:layout_constraintStart_toStartOf="@+id/upjilha_pramukh"
             app:layout_constraintTop_toBottomOf="@+id/upjilha_pramukh" />
@@ -86,6 +90,7 @@
             android:text="उपजिल्हा युवा अधिकारी"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/upjilha_sanghtika"
             app:layout_constraintStart_toStartOf="@+id/upjilha_sanghtika"
             app:layout_constraintTop_toBottomOf="@+id/upjilha_sanghtika" />
@@ -101,6 +106,7 @@
             android:text="तालुका प्रमुख"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/upjilha_yuva_adhikari"
             app:layout_constraintStart_toStartOf="@+id/upjilha_yuva_adhikari"
             app:layout_constraintTop_toBottomOf="@+id/upjilha_yuva_adhikari" />
@@ -116,6 +122,7 @@
             android:text="तालुका संघटीका"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/taluka_pramukh"
             app:layout_constraintStart_toStartOf="@+id/taluka_pramukh"
             app:layout_constraintTop_toBottomOf="@+id/taluka_pramukh" />
@@ -131,6 +138,7 @@
             android:text="तालुका युवा अधिकरी"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/taluka_sanghtika"
             app:layout_constraintStart_toStartOf="@+id/taluka_sanghtika"
             app:layout_constraintTop_toBottomOf="@+id/taluka_sanghtika" />
@@ -146,6 +154,7 @@
             android:text="उपतालुका प्रमुख"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/taluka_yuva_adhikari"
             app:layout_constraintStart_toStartOf="@+id/taluka_yuva_adhikari"
             app:layout_constraintTop_toBottomOf="@+id/taluka_yuva_adhikari" />
@@ -161,6 +170,7 @@
             android:text="उपतालुका संघटीका"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/uptaluka_pramukh"
             app:layout_constraintStart_toStartOf="@+id/uptaluka_pramukh"
             app:layout_constraintTop_toBottomOf="@+id/uptaluka_pramukh" />
@@ -176,6 +186,7 @@
             android:text="उपतालुका युवा अधिकरी"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/uptaluka_sanghtika"
             app:layout_constraintStart_toStartOf="@+id/uptaluka_sanghtika"
             app:layout_constraintTop_toBottomOf="@+id/uptaluka_sanghtika" />
@@ -191,6 +202,7 @@
             android:text="विभाग प्रमुख"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/uptaluka_yuva_adhikari"
             app:layout_constraintStart_toStartOf="@+id/uptaluka_yuva_adhikari"
             app:layout_constraintTop_toBottomOf="@+id/uptaluka_yuva_adhikari" />
@@ -206,6 +218,7 @@
             android:text="विभाग संघटीका"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/vibhag_pramukh"
             app:layout_constraintStart_toStartOf="@+id/vibhag_pramukh"
             app:layout_constraintTop_toBottomOf="@+id/vibhag_pramukh" />
@@ -221,6 +234,7 @@
             android:text="विभाग युवा अधिकरी"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/vibhag_sanghtika"
             app:layout_constraintStart_toStartOf="@+id/vibhag_sanghtika"
             app:layout_constraintTop_toBottomOf="@+id/vibhag_sanghtika" />
@@ -236,6 +250,7 @@
             android:text="शाखा प्रमुख"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/vibhag_yuva_adhikari"
             app:layout_constraintStart_toStartOf="@+id/vibhag_yuva_adhikari"
             app:layout_constraintTop_toBottomOf="@+id/vibhag_yuva_adhikari" />
@@ -251,6 +266,7 @@
             android:text="शाखा संघटीका"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/shakha_pramukh"
             app:layout_constraintStart_toStartOf="@+id/shakha_pramukh"
             app:layout_constraintTop_toBottomOf="@+id/shakha_pramukh" />
@@ -266,6 +282,7 @@
             android:text="शाखा युवा अधिकरी"
             android:textColor="@color/white"
             android:textSize="24sp"
+            android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="@+id/shakha_sanghtika"
             app:layout_constraintStart_toStartOf="@+id/shakha_sanghtika"
             app:layout_constraintTop_toBottomOf="@+id/shakha_sanghtika" />
