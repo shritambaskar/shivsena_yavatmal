@@ -32,19 +32,19 @@ public class AddTalukaActivity extends AppCompatActivity {
 
     private void addTaluka(View view) {
         String sp = sp_chooseVidhansabha.getSelectedItem().toString();
-        String taluka = et_taluka.getText().toString();
+        String taluka = et_taluka.getText().toString().trim();
 
         mDatabase = FirebaseDatabase.getInstance();
-        mRef = mDatabase.getReference(sp).child("taluka_spinner");
+        mRef = mDatabase.getReference(sp).child("तालुक्याचे नाव");
         
         if (taluka.isEmpty()){
             et_taluka.setError("क्रुपया तालुक्याचे नाव टाका");
             et_taluka.requestFocus();
             return;
         }
-        TalukaDetails details = new TalukaDetails(taluka);
-        String key = mRef.push().getKey();
-        mRef.child(key).setValue(details);
+        //TalukaDetails details = new TalukaDetails(taluka);
+        //String key = mRef.push().getKey();
+        mRef.child(taluka).setValue(taluka);
         Toast.makeText(AddTalukaActivity.this, "Registered", Toast.LENGTH_SHORT).show();
 
         sp_chooseVidhansabha.setSelection(0);

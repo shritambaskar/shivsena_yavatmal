@@ -39,9 +39,9 @@ public class AdminYavtamalActivity extends AppCompatActivity {
 
 
     private void saveData(View view) {
-        String name = yavatmal_vidhansabha_name.getText().toString();
-        String phone = yavatmal_vidhansabha_phone.getText().toString();
-        String post = yavatmal_vidhansabha_spinner.getSelectedItem().toString();
+        String name = yavatmal_vidhansabha_name.getText().toString().trim();
+        String phone = yavatmal_vidhansabha_phone.getText().toString().trim();
+        String post = yavatmal_vidhansabha_spinner.getSelectedItem().toString().trim();
 
         if (name.isEmpty()){
             yavatmal_vidhansabha_name.setError("क्रुपया नाव टाका");
