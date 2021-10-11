@@ -38,7 +38,7 @@ public class AddGaonActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_gaon);
-
+        setTitle("गाव जोडा");
         initialise();
 
         this.addGaon.setOnClickListener(this::addGaon);

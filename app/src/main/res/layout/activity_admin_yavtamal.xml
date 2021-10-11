@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,106 +8,143 @@
     android:background="@color/background"
     tools:context=".admin.AdminYavtamalActivity">
 
-    <TextView
-        android:id="@+id/tv_addPlace"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:elevation="10dp"
-        android:fontFamily="@font/audiowide"
-        android:text="Add Members"
-        android:textColor="@color/shivsena"
-        android:textSize="38sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.267" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
 
-    <EditText
-        android:id="@+id/et_addPlace"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_et"
-        android:backgroundTint="@color/white"
-        android:drawableStart="@drawable/ic_name"
-        android:drawablePadding="12dp"
-        android:drawableTint="@color/shivsena"
-        android:elevation="10dp"
-        android:hint="क्रुपया नाव टाका"
-        android:inputType="text"
-        android:paddingStart="20dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/shivsena"
-        app:layout_constraintEnd_toEndOf="@+id/tv_addPlace"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tv_addPlace"
-        app:layout_constraintTop_toBottomOf="@+id/tv_addPlace" />
+        <TextView
+            android:id="@+id/tv_addPlace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/audiowide"
+            android:text="Add Members"
+            android:textColor="@color/shivsena"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.267" />
 
-    <EditText
-        android:id="@+id/yavatmal_vidhansabha_phone"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_et"
-        android:backgroundTint="@color/white"
-        android:drawableStart="@drawable/ic_phone"
-        android:drawableTint="@color/shivsena"
-        android:drawablePadding="12dp"
-        android:textColor="@color/black"
-        android:hint="क्रुपया दुरध्वनि क्रमांक टाका"
-        android:textColorHint="@color/shivsena"
-        android:inputType="number"
-        android:paddingStart="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/et_addPlace"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/et_addPlace"
-        app:layout_constraintTop_toBottomOf="@+id/et_addPlace" />
+        <EditText
+            android:id="@+id/yavatmal_vidhansabha_name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_et"
+            android:drawableStart="@drawable/ic_name"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/shivsena"
+            android:elevation="10dp"
+            android:hint="क्रुपया नाव टाका"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/shivsena"
+            app:layout_constraintEnd_toEndOf="@+id/tv_addPlace"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_addPlace"
+            app:layout_constraintTop_toBottomOf="@+id/tv_addPlace" />
 
-    <Button
-        android:id="@+id/btn_addPlace"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_bt"
-        android:backgroundTint="@color/shivsena"
-        android:elevation="10dp"
-        android:text="GO"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/yavatmal_vidhansabha_phone"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/yavatmal_vidhansabha_phone"
-        app:layout_constraintTop_toBottomOf="@+id/yavatmal_vidhansabha_spinner"
-        app:layout_constraintVertical_bias="0.208" />
+        <EditText
+            android:id="@+id/yavatmal_vidhansabha_phone"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_et"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawableTint="@color/shivsena"
+            android:drawablePadding="12dp"
+            android:textColor="@color/black"
+            android:hint="क्रुपया दुरध्वनि क्रमांक टाका"
+            android:textColorHint="@color/shivsena"
+            android:inputType="number"
+            android:paddingStart="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/yavatmal_vidhansabha_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/yavatmal_vidhansabha_name"
+            app:layout_constraintTop_toBottomOf="@+id/yavatmal_vidhansabha_name" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="405dp"
-        android:layout_height="157dp"
-        android:elevation="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_addPlace"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shivsena_logo_new" />
+        <Button
+            android:id="@+id/btn_addMember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bt"
+            android:backgroundTint="@color/shivsena"
+            android:elevation="10dp"
+            android:text="GO"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/yavatmal_vidhansabha_spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/yavatmal_vidhansabha_spinner" />
 
-    <Spinner
-        android:theme="@style/Spinner"
-        android:id="@+id/yavatmal_vidhansabha_spinner"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:background="@drawable/rounded_et"
-        android:elevation="10dp"
-        android:entries="@array/yavatmal_vidhansabha"
-        android:paddingStart="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/yavatmal_vidhansabha_phone"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/yavatmal_vidhansabha_phone"
-        app:layout_constraintTop_toBottomOf="@+id/yavatmal_vidhansabha_phone"
-        app:layout_constraintVertical_bias="0.065" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="405dp"
+            android:layout_height="157dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_addPlace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/shivsena_logo_new" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Spinner
+            android:id="@+id/yavatmal_vidhansabha_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_et"
+            android:elevation="10dp"
+            android:entries="@array/yavatmal_vidhansabha"
+            android:paddingStart="50dp"
+            android:theme="@style/Spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/yavatmal_vidhansabha_phone"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/yavatmal_vidhansabha_phone"
+            app:layout_constraintTop_toBottomOf="@+id/yavatmal_vidhansabha_phone"
+            app:layout_constraintVertical_bias="0.083" />
+
+        <Spinner
+            android:id="@+id/yavatmal_taluka_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_et"
+            android:elevation="10dp"
+            android:paddingStart="50dp"
+            android:theme="@style/Spinner"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/yavatmal_vidhansabha_spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/yavatmal_vidhansabha_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/yavatmal_vidhansabha_spinner" />
+
+        <Spinner
+            android:id="@+id/yavatmal_gaon_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_et"
+            android:elevation="10dp"
+            android:paddingStart="50dp"
+            android:theme="@style/Spinner"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btn_addMember"
+            app:layout_constraintEnd_toEndOf="@+id/yavatmal_taluka_spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/yavatmal_taluka_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/yavatmal_taluka_spinner"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

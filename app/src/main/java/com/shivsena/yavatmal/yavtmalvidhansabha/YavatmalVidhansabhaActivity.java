@@ -20,6 +20,7 @@ import java.util.List;
 public class YavatmalVidhansabhaActivity extends AppCompatActivity {
 
     private Button upjilha_pramukh,upjilha_sanghatika,upjilha_yuva_adhikari;
+    private Button taluka_pramukh;
 
 
     @Override
@@ -31,6 +32,16 @@ public class YavatmalVidhansabhaActivity extends AppCompatActivity {
         this.upjilha_pramukh.setOnClickListener(this::upjilhaPramukh);
         this.upjilha_sanghatika.setOnClickListener(this::upjilhaSanghatika);
         this.upjilha_yuva_adhikari.setOnClickListener(this::upjilhaYuvaAdhikari);
+        this.taluka_pramukh.setOnClickListener(this::talukaPramukh);
+    }
+
+    private void talukaPramukh(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "तालुका प्रमुख";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
+        intent.putExtra("post",post);
+        startActivity(intent);
     }
 
     private void upjilhaYuvaAdhikari(View view) {
@@ -58,5 +69,7 @@ public class YavatmalVidhansabhaActivity extends AppCompatActivity {
         upjilha_pramukh = findViewById(R.id.upjilha_pramukh);
         upjilha_sanghatika=findViewById(R.id.upjilha_sanghtika);
         upjilha_yuva_adhikari=findViewById(R.id.upjilha_yuva_adhikari);
+
+        taluka_pramukh = findViewById(R.id.taluka_pramukh);
     }
 }
