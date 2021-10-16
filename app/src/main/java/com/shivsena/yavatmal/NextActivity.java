@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.shivsena.yavatmal.yavtmalvidhansabha.DigrasVidhansabhaActivity;
 import com.shivsena.yavatmal.yavtmalvidhansabha.UmerkhedVidhansabhaActivity;
 import com.shivsena.yavatmal.yavtmalvidhansabha.YavatmalVidhansabhaActivity;
 
@@ -35,7 +36,7 @@ public class NextActivity extends AppCompatActivity {
         btn_digras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(NextActivity.this,DigrasVidhansabhaActivity.class));
+                startActivity(new Intent(NextActivity.this, DigrasVidhansabhaActivity.class));
             }
         });
     }
