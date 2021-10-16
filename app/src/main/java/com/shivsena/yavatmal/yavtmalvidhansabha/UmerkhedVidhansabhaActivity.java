@@ -25,6 +25,18 @@ public class UmerkhedVidhansabhaActivity extends AppCompatActivity {
         this.umerkhed_upjilha_pramukh.setOnClickListener(this::upjilhaPramukh);
         this.umerkhed_upjilha_sanghatika.setOnClickListener(this::upjilhaSanghatika);
         this.umerkhed_upjilha_yuva_adhikari.setOnClickListener(this::upjilhaYuvaAdhikari);
+        this.umerkhed_taluka_pramukh.setOnClickListener(this::talukaPramukh);
+        this.umerkhed_taluka_sanghatika.setOnClickListener(this::talukaSanghatika);
+        this.umerkhed_taluka_yuva_adhikari.setOnClickListener(this::talukaYuvaAdhikari);
+    }
+
+    private void talukaYuvaAdhikari(View view) {
+    }
+
+    private void talukaSanghatika(View view) {
+    }
+
+    private void talukaPramukh(View view) {
     }
 
     private void upjilhaYuvaAdhikari(View view) {
