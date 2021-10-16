@@ -24,6 +24,7 @@ public class YavatmalVidhansabhaActivity extends AppCompatActivity {
     private Button uptaluka_pramukh,uptaluka_sanghatika,uptaluka_yuva_adhikari;
     private Button vibhag_pramukh,vibhag_sanghatika,vibhag_yuva_adhikari;
     private Button shakha_pramukh,shakha_sanghatika,shakha_yuva_adhikari;
+    hello
 
 
     @Override
