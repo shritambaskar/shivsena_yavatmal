@@ -37,7 +37,43 @@ public class YavatmalVidhansabhaActivity extends AppCompatActivity {
         this.taluka_pramukh.setOnClickListener(this::talukaPramukh);
         this.taluka_sanghatika.setOnClickListener(this::talukaSanghatika);
         this.taluka_yuva_adhikar.setOnClickListener(this::talukaYuvaAdhikari);
+        this.up_taluka_pramukh.setOnClickListener(this::upTalukaPramukh);
+        this.up_taluka_sanghatika.setOnClickListener(this::upTalukaSanghatika);
+        this.up_taluka_yuva_adhikari.setOnClickListener(this::upTalukaYuvaAdhikari);
+        this.vibhag_pramukh.setOnClickListener(this::vibhagPramukh);
+        this.vibhag_sanghatika.setOnClickListener(this::vibhagSanghatika);
+        this.vibhag_yuva_adhikari.setOnClickListener(this::vibhagYuvaAdhikari);
+        this.shakha_pramukh.setOnClickListener(this::shakhaPramukh);
+        this.shakha_sanghatika.setOnClickListener(this::shakhaSanghatika);
+        this.shakha_yuva_adhikari.setOnClickListener(this::shakhaYuvaAdhikari);
 
+    }
+
+    private void shakhaYuvaAdhikari(View view) {
+    }
+
+    private void shakhaSanghatika(View view) {
+    }
+
+    private void shakhaPramukh(View view) {
+    }
+
+    private void vibhagYuvaAdhikari(View view) {
+    }
+
+    private void vibhagSanghatika(View view) {
+    }
+
+    private void vibhagPramukh(View view) {
+    }
+
+    private void upTalukaYuvaAdhikari(View view) {
+    }
+
+    private void upTalukaSanghatika(View view) {
+    }
+
+    private void upTalukaPramukh(View view) {
     }
 
     private void talukaYuvaAdhikari(View view) {
