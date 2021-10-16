@@ -20,7 +20,7 @@ import java.util.List;
 public class YavatmalVidhansabhaActivity extends AppCompatActivity {
 
     private Button upjilha_pramukh,upjilha_sanghatika,upjilha_yuva_adhikari;
-    private Button taluka_pramukh;
+    private Button taluka_pramukh,taluka_sanghatika,taluka_yuva_adhikar;
     private Button uptaluka_pramukh,uptaluka_sanghatika,uptaluka_yuva_adhikari;
     private Button vibhag_pramukh,vibhag_sanghatika,vibhag_yuva_adhikari;
     private Button shakha_pramukh,shakha_sanghatika,shakha_yuva_adhikari;
@@ -36,6 +36,27 @@ public class YavatmalVidhansabhaActivity extends AppCompatActivity {
         this.upjilha_sanghatika.setOnClickListener(this::upjilhaSanghatika);
         this.upjilha_yuva_adhikari.setOnClickListener(this::upjilhaYuvaAdhikari);
         this.taluka_pramukh.setOnClickListener(this::talukaPramukh);
+        this.taluka_sanghatika.setOnClickListener(this::talukaSanghatika);
+        this.taluka_yuva_adhikar.setOnClickListener(this::talukaYuvaAdhikari);
+
+    }
+
+    private void talukaYuvaAdhikari(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "तालुका युवा अधिकारी";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
+        intent.putExtra("post",post);
+        startActivity(intent);
+    }
+
+    private void talukaSanghatika(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "तालुका संघटीका";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
+        intent.putExtra("post",post);
+        startActivity(intent);
     }
 
     private void talukaPramukh(View view) {
@@ -74,5 +95,7 @@ public class YavatmalVidhansabhaActivity extends AppCompatActivity {
         upjilha_yuva_adhikari=findViewById(R.id.upjilha_yuva_adhikari);
 
         taluka_pramukh = findViewById(R.id.taluka_pramukh);
+        taluka_sanghatika =findViewById(R.id.taluka_sanghtika);
+        taluka_yuva_adhikar = findViewById(R.id.taluka_yuva_adhikari);
     }
 }
