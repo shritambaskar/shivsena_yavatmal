@@ -13,7 +13,7 @@ public class UmerkhedVidhansabhaActivity extends AppCompatActivity {
 
     private Button umerkhed_upjilha_pramukh,umerkhed_upjilha_sanghatika,umerkhed_upjilha_yuva_adhikari;
     private Button umerkhed_taluka_pramukh,umerkhed_taluka_sanghatika,umerkhed_taluka_yuva_adhikari;
-    private Button umerkhed_uptaluka_pramukh,umerkhed_uptaluka_sanghatika,umerkhed_uptaluka_yuva_adhikari;
+    private Button umerkhed_up_taluka_pramukh,umerkhed_up_taluka_sanghatika,umerkhed_up_taluka_yuva_adhikari;
     private Button umerkhed_vibhag_pramukh,umerkhed_vibhag_sanghatika,umerkhed_vibhag_yuva_adhikari;
     private Button umerkhed_shakha_pramukh,umerkhed_shakha_sanghatika,umerkhed_shakha_yuva_adhikari;
 
@@ -57,9 +57,9 @@ public class UmerkhedVidhansabhaActivity extends AppCompatActivity {
         umerkhed_taluka_sanghatika=findViewById(R.id.umerkhed_taluka_sanghtika);
         umerkhed_taluka_yuva_adhikari=findViewById(R.id.umerkhed_taluka_yuva_adhikari);
 
-        umerkhed_uptaluka_pramukh = findViewById(R.id.umerkhed_uptaluka_pramukh);
-        umerkhed_uptaluka_sanghatika=findViewById(R.id.umerkhed_uptaluka_sanghtika);
-        umerkhed_uptaluka_yuva_adhikari=findViewById(R.id.umerkhed_uptaluka_yuva_adhikari);
+        umerkhed_up_taluka_pramukh = findViewById(R.id.umerkhed_uptaluka_pramukh);
+        umerkhed_up_taluka_sanghatika=findViewById(R.id.umerkhed_uptaluka_sanghtika);
+        umerkhed_up_taluka_yuva_adhikari=findViewById(R.id.umerkhed_uptaluka_yuva_adhikari);
 
         umerkhed_vibhag_pramukh = findViewById(R.id.umerkhed_vibhag_pramukh);
         umerkhed_vibhag_sanghatika = findViewById(R.id.umerkhed_vibhag_sanghtika);
