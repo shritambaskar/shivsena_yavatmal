@@ -96,5 +96,19 @@ public class YavatmalVidhansabhaActivity extends AppCompatActivity {
         taluka_pramukh = findViewById(R.id.taluka_pramukh);
         taluka_sanghatika =findViewById(R.id.taluka_sanghtika);
         taluka_yuva_adhikar = findViewById(R.id.taluka_yuva_adhikari);
+
+        up_taluka_pramukh = findViewById(R.id.uptaluka_pramukh);
+        up_taluka_sanghatika =findViewById(R.id.uptaluka_sanghtika);
+        up_taluka_yuva_adhikari = findViewById(R.id.uptaluka_yuva_adhikari);
+
+        vibhag_pramukh = findViewById(R.id.vibhag_pramukh);
+        vibhag_sanghatika =findViewById(R.id.vibhag_sanghtika);
+        vibhag_yuva_adhikari = findViewById(R.id.vibhag_yuva_adhikari);
+
+        shakha_pramukh = findViewById(R.id.shakha_pramukh);
+        shakha_sanghatika =findViewById(R.id.shakha_sanghtika);
+        shakha_yuva_adhikari = findViewById(R.id.shakha_yuva_adhikari);
+
+
     }
 }
