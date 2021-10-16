@@ -12,7 +12,7 @@ import com.shivsena.yavatmal.yavtmalvidhansabha.YavatmalVidhansabhaActivity;
 
 public class NextActivity extends AppCompatActivity {
 
-    private Button btn_yavatmal_vidhansabha,btn_umarkhed;
+    private Button btn_yavatmal_vidhansabha,btn_umarkhed,btn_digras;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +29,13 @@ public class NextActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(NextActivity.this, UmerkhedVidhansabhaActivity.class));
+            }
+        });
+        btn_digras = findViewById(R.id.btn_digras);
+        btn_digras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(NextActivity.this,DigrasVidhansabhaActivity.class));
             }
         });
     }
