@@ -56,7 +56,10 @@ public class AdminYavtamalActivity extends AppCompatActivity {
                 }
                 if(post.equals("तालुका प्रमुख") || post.equals("तालुका संघटीका") || post.equals("तालुका युवा अधिकारी")
                         || post.equals("उपतालुका प्रमुख") || post.equals("उपतालुका संघटीका")
-                        || post.equals("उपतालुका युवा अधिकारी")){
+                        || post.equals("उपतालुका युवा अधिकारी")|| post.equals("विभाग प्रमुख")
+                        || post.equals("विभाग संघटीका")|| post.equals("विभाग युवा अधिकारी")
+                        || post.equals("शाखा प्रमुख")|| post.equals("शाखा संघटीका")
+                        || post.equals("शाखा युवा अधिकारी")){
 
                     yavatmal_taluka_spinner.setVisibility(View.VISIBLE);
 
@@ -118,8 +121,12 @@ public class AdminYavtamalActivity extends AppCompatActivity {
 
         if(post.equals("तालुका प्रमुख") || post.equals("तालुका संघटीका") || post.equals("तालुका युवा अधिकारी")
                 || post.equals("उपतालुका प्रमुख") || post.equals("उपतालुका संघटीका")
-                || post.equals("उपतालुका युवा अधिकारी")){
-                 String taluka = yavatmal_taluka_spinner.getSelectedItem().toString().trim();//darwha
+                || post.equals("उपतालुका युवा अधिकारी")|| post.equals("विभाग प्रमुख")
+                || post.equals("विभाग संघटीका")|| post.equals("विभाग युवा अधिकारी")
+                || post.equals("शाखा प्रमुख")|| post.equals("शाखा संघटीका")
+                || post.equals("शाखा युवा अधिकारी")){
+
+            String taluka = yavatmal_taluka_spinner.getSelectedItem().toString().trim();//darwha
             ShivsenaDetails details = new ShivsenaDetails(name,phone,post,taluka);
             String key = mRef.push().getKey();
             mRef = mDatabase.getReference().child(vidhansabha);
@@ -127,6 +134,8 @@ public class AdminYavtamalActivity extends AppCompatActivity {
             Toast.makeText(AdminYavtamalActivity.this, "Registered.....", Toast.LENGTH_SHORT).show();
             yavatmal_taluka_spinner.setVisibility(View.INVISIBLE);
 
+        }else{
+            Toast.makeText(AdminYavtamalActivity.this, "Not Registered...", Toast.LENGTH_SHORT).show();
         }
         /*<item>विभाग प्रमुख</item>
         <item>विभाग संघटीका</item>

@@ -34,51 +34,51 @@ public class YavatmalVidhansabhaActivity extends AppCompatActivity {
         this.upjilha_pramukh.setOnClickListener(this::upjilhaPramukh);
         this.upjilha_sanghatika.setOnClickListener(this::upjilhaSanghatika);
         this.upjilha_yuva_adhikari.setOnClickListener(this::upjilhaYuvaAdhikari);
+
         this.taluka_pramukh.setOnClickListener(this::talukaPramukh);
         this.taluka_sanghatika.setOnClickListener(this::talukaSanghatika);
         this.taluka_yuva_adhikar.setOnClickListener(this::talukaYuvaAdhikari);
+
         this.up_taluka_pramukh.setOnClickListener(this::upTalukaPramukh);
         this.up_taluka_sanghatika.setOnClickListener(this::upTalukaSanghatika);
         this.up_taluka_yuva_adhikari.setOnClickListener(this::upTalukaYuvaAdhikari);
+
         this.vibhag_pramukh.setOnClickListener(this::vibhagPramukh);
         this.vibhag_sanghatika.setOnClickListener(this::vibhagSanghatika);
         this.vibhag_yuva_adhikari.setOnClickListener(this::vibhagYuvaAdhikari);
+        
         this.shakha_pramukh.setOnClickListener(this::shakhaPramukh);
         this.shakha_sanghatika.setOnClickListener(this::shakhaSanghatika);
         this.shakha_yuva_adhikari.setOnClickListener(this::shakhaYuvaAdhikari);
 
+
+
     }
 
-    private void shakhaYuvaAdhikari(View view) {
+    private void upjilhaPramukh(View view) {
+        String post = "उपजिल्हा प्रमुख";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalDetailsActivity.class);
+        intent.putExtra("post",post);
+        startActivity(intent);
     }
 
-    private void shakhaSanghatika(View view) {
+    private void upjilhaSanghatika(View view) {
+        String post = "उपजिल्हा संघटीका";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalDetailsActivity.class);
+        intent.putExtra("post",post);
+        startActivity(intent);
     }
 
-    private void shakhaPramukh(View view) {
+    private void upjilhaYuvaAdhikari(View view) {
+        String post = "उपजिल्हा युवा अधिकारी";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalDetailsActivity.class);
+        intent.putExtra("post",post);
+        startActivity(intent);
     }
 
-    private void vibhagYuvaAdhikari(View view) {
-    }
-
-    private void vibhagSanghatika(View view) {
-    }
-
-    private void vibhagPramukh(View view) {
-    }
-
-    private void upTalukaYuvaAdhikari(View view) {
-    }
-
-    private void upTalukaSanghatika(View view) {
-    }
-
-    private void upTalukaPramukh(View view) {
-    }
-
-    private void talukaYuvaAdhikari(View view) {
+    private void talukaPramukh(View view) {
         String vidhansabha = "यवतमाळ विधानसभा";
-        String post = "तालुका युवा अधिकारी";
+        String post = "तालुका प्रमुख";
         Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
         intent.putExtra("vidhansabha",vidhansabha);
         intent.putExtra("post",post);
@@ -94,35 +94,98 @@ public class YavatmalVidhansabhaActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void talukaPramukh(View view) {
+    private void talukaYuvaAdhikari(View view) {
         String vidhansabha = "यवतमाळ विधानसभा";
-        String post = "तालुका प्रमुख";
+        String post = "तालुका युवा अधिकारी";
         Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
         intent.putExtra("vidhansabha",vidhansabha);
         intent.putExtra("post",post);
         startActivity(intent);
     }
 
-    private void upjilhaYuvaAdhikari(View view) {
-        String post = "उपजिल्हा युवा अधिकारी";
-        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalDetailsActivity.class);
+    private void upTalukaPramukh(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "उपतालुका प्रमुख";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
         intent.putExtra("post",post);
         startActivity(intent);
     }
 
-    private void upjilhaSanghatika(View view) {
-        String post = "उपजिल्हा संघटीका";
-        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalDetailsActivity.class);
+
+    private void upTalukaSanghatika(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "उपतालुका संघटीका";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
         intent.putExtra("post",post);
         startActivity(intent);
     }
 
-    private void upjilhaPramukh(View view) {
-        String post = "उपजिल्हा प्रमुख";
-        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalDetailsActivity.class);
+    private void upTalukaYuvaAdhikari(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "उपतालुका युवा अधिकारी";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
         intent.putExtra("post",post);
         startActivity(intent);
     }
+
+    private void vibhagPramukh(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "विभाग प्रमुख";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
+        intent.putExtra("post",post);
+        startActivity(intent);
+    }
+
+    private void vibhagSanghatika(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "विभाग संघटीका";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
+        intent.putExtra("post",post);
+        startActivity(intent);
+    }
+
+    private void vibhagYuvaAdhikari(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "विभाग युवा अधिकारी";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
+        intent.putExtra("post",post);
+        startActivity(intent);
+    }
+
+    private void shakhaPramukh(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "शाखा प्रमुख";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
+        intent.putExtra("post",post);
+        startActivity(intent);
+    }
+
+    private void shakhaSanghatika(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "शाखा संघटीका";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
+        intent.putExtra("post",post);
+        startActivity(intent);
+    }
+
+    private void shakhaYuvaAdhikari(View view) {
+        String vidhansabha = "यवतमाळ विधानसभा";
+        String post = "शाखा युवा अधिकारी";
+        Intent intent = new Intent(YavatmalVidhansabhaActivity.this,YavatmalTalukaDetailsActivity.class);
+        intent.putExtra("vidhansabha",vidhansabha);
+        intent.putExtra("post",post);
+        startActivity(intent);
+    }
+
+
 
     private void initialise() {
         upjilha_pramukh = findViewById(R.id.upjilha_pramukh);
