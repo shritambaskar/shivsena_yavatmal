@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.शिवसेनायवतमाळ">
         <activity
+            android:name=".yavtmalvidhansabha.DigrasTalukaDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".yavtmalvidhansabha.DigrasDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".yavtmalvidhansabha.DigrasVidhansabhaActivity"
+            android:exported="true" />
+        <activity
             android:name=".yavtmalvidhansabha.UmerkhedTalukaDetailsActivity"
             android:exported="true" />
         <activity
