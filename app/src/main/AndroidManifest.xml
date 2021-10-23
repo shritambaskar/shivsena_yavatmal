@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.शिवसेनायवतमाळ">
         <activity
+            android:name=".deleteData.ShowDataActivity"
+            android:exported="true" />
+        <activity
             android:name=".deleteData.MemberDeleteActivity"
             android:exported="true" />
         <activity
