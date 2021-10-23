@@ -134,6 +134,11 @@ public class AdminYavtamalActivity extends AppCompatActivity {
             Toast.makeText(AdminYavtamalActivity.this, "Registered.....", Toast.LENGTH_SHORT).show();
             yavatmal_taluka_spinner.setVisibility(View.INVISIBLE);
 
+        }else if(post.equals("उपजिल्हा प्रमुख") || post.equals("उपजिल्हा संघटीका") || post.equals("उपजिल्हा युवा अधिकारी")){
+            ShivsenaDetails details = new ShivsenaDetails(name,phone,post);
+            String key = mRef.push().getKey();
+            mRef.child(post).child(key).setValue(details);
+            Toast.makeText(AdminYavtamalActivity.this, "Registered.....", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(AdminYavtamalActivity.this, "Not Registered...", Toast.LENGTH_SHORT).show();
         }
@@ -144,12 +149,7 @@ public class AdminYavtamalActivity extends AppCompatActivity {
         <item>शाखा संघटीका</item>
         <item>शाखा युवा अधिकारी</item>*/
 
-        if(post.equals("उपजिल्हा प्रमुख") || post.equals("उपजिल्हा संघटीका") || post.equals("उपजिल्हा युवा अधिकारी")){
-            ShivsenaDetails details = new ShivsenaDetails(name,phone,post);
-            String key = mRef.push().getKey();
-            mRef.child(post).child(key).setValue(details);
-            Toast.makeText(AdminYavtamalActivity.this, "Registered.....", Toast.LENGTH_SHORT).show();
-        }
+
         yavatmal_vidhansabha_name.setText("");
         yavatmal_vidhansabha_phone.setText("");
         yavatmal_vidhansabha_spinner.setSelection(0);
