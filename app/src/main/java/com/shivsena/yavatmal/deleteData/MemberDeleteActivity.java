@@ -37,13 +37,10 @@ public class MemberDeleteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_delete);
         initialise();
-        this.deleteGo.setOnClickListener(this::deleteData);
+
 
     }
 
-    private void deleteData(View view) {
-
-    }
 
 
     private void initialise() {
