@@ -142,14 +142,7 @@ public class AdminYavtamalActivity extends AppCompatActivity {
         }else{
             Toast.makeText(AdminYavtamalActivity.this, "Not Registered...", Toast.LENGTH_SHORT).show();
         }
-        /*<item>विभाग प्रमुख</item>
-        <item>विभाग संघटीका</item>
-        <item>विभाग युवा अधिकारी</item>
-        <item>शाखा प्रमुख</item>
-        <item>शाखा संघटीका</item>
-        <item>शाखा युवा अधिकारी</item>*/
-
-
+        
         yavatmal_vidhansabha_name.setText("");
         yavatmal_vidhansabha_phone.setText("");
         yavatmal_vidhansabha_spinner.setSelection(0);
