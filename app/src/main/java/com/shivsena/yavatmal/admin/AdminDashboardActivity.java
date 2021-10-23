@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.shivsena.yavatmal.R;
+import com.shivsena.yavatmal.deleteData.MemberDeleteActivity;
 
 public class AdminDashboardActivity extends AppCompatActivity {
 
@@ -24,6 +25,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
     }
 
     private void deleteMember(View view) {
+        startActivity(new Intent(AdminDashboardActivity.this, MemberDeleteActivity.class));
     }
 
     private void addMember(View view) {
