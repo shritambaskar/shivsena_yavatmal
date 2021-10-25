@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@color/background">
+        <TextView
+            android:id="@+id/del_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/shivsena"
+            android:textStyle="bold"
+            android:text="पद :"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/del_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="नाव :"
+            android:textColor="@color/shivsena"
+            android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/del_phone"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="दूरध्वनि :"
+                android:textColor="@color/shivsena"
+                android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="230dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_bt"
+            android:text="Delete"
+            android:textColor="@color/background" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
