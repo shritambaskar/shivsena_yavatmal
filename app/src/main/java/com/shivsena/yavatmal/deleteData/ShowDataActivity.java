@@ -40,14 +40,16 @@ public class ShowDataActivity extends AppCompatActivity {
         String post = getIntent().getStringExtra("post");
         String taluka = getIntent().getStringExtra("taluka");
 
+        recyclerView = findViewById(R.id.delete_recyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        list = new ArrayList<>();
+        adapter = new DeleteAdapter(this,list);
+        recyclerView.setAdapter(adapter);
+
         if(taluka == null){
             mRef = mDatabase.getReference(vidhansabha).child(post);
-            recyclerView = findViewById(R.id.delete_recyclerView);
-            recyclerView.setHasFixedSize(true);
-            recyclerView.setLayoutManager(new LinearLayoutManager(this));
-            list = new ArrayList<>();
-            adapter = new DeleteAdapter(this,list);
-            recyclerView.setAdapter(adapter);
+
             mChildEventListener = new ChildEventListener() {
                 @Override
                 public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
@@ -84,12 +86,7 @@ public class ShowDataActivity extends AppCompatActivity {
 
         else if(taluka!=null) {
             mRef = mDatabase.getReference(vidhansabha).child(taluka+" तालुका").child(post);
-            recyclerView = findViewById(R.id.delete_recyclerView);
-            recyclerView.setHasFixedSize(true);
-            recyclerView.setLayoutManager(new LinearLayoutManager(this));
-            list = new ArrayList<>();
-            adapter = new DeleteAdapter(this,list);
-            recyclerView.setAdapter(adapter);
+
             mChildEventListener = new ChildEventListener() {
                 @Override
                 public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
