@@ -45,6 +45,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:visibility="invisible"
+        android:paddingStart="30dp"
         android:background="@drawable/rounded_et"
         android:theme="@style/Spinner"
         app:layout_constraintEnd_toEndOf="@+id/delete_spinner_post"

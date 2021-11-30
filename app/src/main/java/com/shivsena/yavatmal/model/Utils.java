@@ -13,7 +13,7 @@ public class Utils {
 
     public static Task<Void> removeUser(String userId, String vidhansabha, String post, String taluka) {
         Task<Void> task = FirebaseDatabase.getInstance().getReference(vidhansabha).
-                child(taluka+"").child(post).child(userId).removeValue();
+                child(taluka+" तालुका").child(post).child(userId).removeValue();
         return task;
     }
 }
