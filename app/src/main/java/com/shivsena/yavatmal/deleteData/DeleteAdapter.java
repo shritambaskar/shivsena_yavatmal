@@ -12,24 +12,34 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.shivsena.yavatmal.R;
 import com.shivsena.yavatmal.adapter.ShivsenaAdapter;
 import com.shivsena.yavatmal.model.ShivsenaDetails;
+import com.shivsena.yavatmal.model.Utils;
 
 import java.util.List;
 
 public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteViewHolder>{
     private Context context;
     private List<ShivsenaDetails> mList;
+    String vidhansabha,post,taluka;
 
-    public DeleteAdapter(Context context,List<ShivsenaDetails> mList){
+    public DeleteAdapter(Context context,List<ShivsenaDetails> mList,String vidhansabha,String post,String taluka){
         this.context = context;
         this.mList = mList;
+        this.vidhansabha = vidhansabha;
+        this.post = post;
+        this.taluka = taluka;
 
     }
     @NonNull
@@ -53,7 +63,34 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String post = data.getPost();
+                if(post.equals("उपजिल्हा प्रमुख") || post.equals("उपजिल्हा संघटीका") || post.equals("उपजिल्हा युवा अधिकारी")){
+                        String userId = data.getUid();
+                    Task<Void> task = Utils.removeUser(userId,vidhansabha,post);
+                    task.addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void unused) {
+                            Toast.makeText(context, "Data Removed....", Toast.LENGTH_SHORT).show();
+                        }
+                    });
 
+                }
+
+                if(post.equals("तालुका प्रमुख") || post.equals("तालुका संघटीका") || post.equals("तालुका युवा अधिकारी")
+                        || post.equals("उपतालुका प्रमुख") || post.equals("उपतालुका संघटीका")
+                        || post.equals("उपतालुका युवा अधिकारी")|| post.equals("विभाग प्रमुख")
+                        || post.equals("विभाग संघटीका")|| post.equals("विभाग युवा अधिकारी")
+                        || post.equals("शाखा प्रमुख")|| post.equals("शाखा संघटीका")
+                        || post.equals("शाखा युवा अधिकारी")){
+                    String userId = data.getUid();
+                    Task<Void> task = Utils.removeUser(userId,vidhansabha,post,taluka);
+                    task.addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void unused) {
+                            Toast.makeText(context, "Data Removed....", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
             }
         });
     }

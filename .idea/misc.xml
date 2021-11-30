@@ -11,7 +11,9 @@
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_admin_yavtamal.xml" value="0.16321070234113713" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_login.xml" value="0.16321070234113713" />
+        <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_member_delete.xml" value="0.16486486486486487" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_next.xml" value="0.16486486486486487" />
+        <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_show_data.xml" value="0.16486486486486487" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_umerkhed_vidhansabha.xml" value="0.16486486486486487" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_yavatmal_details.xml" value="0.16321070234113713" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_yavatmal_vidhansabha.xml" value="0.16486486486486487" />
@@ -39,12 +41,11 @@
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/activity_yavatmal_details.xml" value="0.12401315789473684" />
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/activity_yavatmal_taluka_details.xml" value="0.12736486486486487" />
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/activity_yavatmal_vidhansabha.xml" value="0.12401315789473684" />
-        <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/delete_data.xml" value="0.12736486486486487" />
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/shivsena_data.xml" value="0.12736486486486487" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

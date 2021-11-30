@@ -53,6 +53,7 @@ public class AdminYavtamalActivity extends AppCompatActivity {
 
                 if(post.equals("उपजिल्हा प्रमुख") || post.equals("उपजिल्हा संघटीका") || post.equals("उपजिल्हा युवा अधिकारी")){
                     yavatmal_taluka_spinner.setVisibility(View.INVISIBLE);
+
                 }
                 if(post.equals("तालुका प्रमुख") || post.equals("तालुका संघटीका") || post.equals("तालुका युवा अधिकारी")
                         || post.equals("उपतालुका प्रमुख") || post.equals("उपतालुका संघटीका")

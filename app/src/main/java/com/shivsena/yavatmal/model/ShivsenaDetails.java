@@ -1,5 +1,7 @@
 package com.shivsena.yavatmal.model;
 
+import java.util.Objects;
+
 public class ShivsenaDetails {
     private String name,mobile,post;
     String uid;
@@ -60,4 +62,17 @@ public class ShivsenaDetails {
     public void setUid(String uid) {
         this.uid = uid;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if(o instanceof ShivsenaDetails){
+            ShivsenaDetails data = (ShivsenaDetails) o;
+            return this.uid.equals(data.getUid());
+        }
+        else{
+            return false;
+        }
+        }
+
+
 }

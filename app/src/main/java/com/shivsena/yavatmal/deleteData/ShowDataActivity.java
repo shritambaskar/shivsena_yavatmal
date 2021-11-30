@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -30,21 +31,22 @@ public class ShowDataActivity extends AppCompatActivity {
     private DatabaseReference mRef;
     private ChildEventListener mChildEventListener;
     private FirebaseDatabase mDatabase;
+    private String vidhansabha,post,taluka;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_data);
 
         mDatabase = FirebaseDatabase.getInstance();
-        String vidhansabha = getIntent().getStringExtra("vidhansabha");
-        String post = getIntent().getStringExtra("post");
-        String taluka = getIntent().getStringExtra("taluka");
+        vidhansabha = getIntent().getStringExtra("vidhansabha");
+        post = getIntent().getStringExtra("post");
+        taluka = getIntent().getStringExtra("taluka");
 
         recyclerView = findViewById(R.id.delete_recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         list = new ArrayList<>();
-        adapter = new DeleteAdapter(this,list);
+        adapter = new DeleteAdapter(this,list,vidhansabha,post,taluka);
         recyclerView.setAdapter(adapter);
 
         if(taluka == null){
@@ -67,7 +69,10 @@ public class ShowDataActivity extends AppCompatActivity {
 
                 @Override
                 public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
+                        ShivsenaDetails data = snapshot.getValue(ShivsenaDetails.class);
+                        data.setUid(snapshot.getKey());
+                        list.remove(data);
+                        adapter.notifyDataSetChanged();
                 }
 
                 @Override
@@ -80,7 +85,7 @@ public class ShowDataActivity extends AppCompatActivity {
 
                 }
             };
-            //mRef.addChildEventListener(mChildEventListener);
+            mRef.addChildEventListener(mChildEventListener);
 
         }
 
@@ -120,6 +125,12 @@ public class ShowDataActivity extends AppCompatActivity {
             mRef.addChildEventListener(mChildEventListener);
         }
         //mRef.addChildEventListener(mChildEventListener);
+    }
+    public Task<Void> removeData(String dataId){
+        Task<Void> task = FirebaseDatabase.getInstance().getReference(vidhansabha).child(post)
+                .child(dataId)
+                .setValue(null);
+        return task;
     }
 
 }
