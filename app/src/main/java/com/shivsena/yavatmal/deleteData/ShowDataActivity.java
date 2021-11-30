@@ -68,6 +68,10 @@ public class ShowDataActivity extends AppCompatActivity {
                 @Override
                 public void onChildRemoved(@NonNull DataSnapshot snapshot) {
 
+                    ShivsenaDetails data = snapshot.getValue(ShivsenaDetails.class);
+                    data.setUid(snapshot.getKey());
+                    list.remove(data);
+                    adapter.notifyDataSetChanged();
                 }
 
                 @Override
