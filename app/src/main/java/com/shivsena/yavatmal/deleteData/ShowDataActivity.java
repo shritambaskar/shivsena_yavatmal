@@ -35,7 +35,7 @@ public class ShowDataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_data);
 
-        mDatabase = FirebaseDatabase.getInstance();
+
         String vidhansabha = getIntent().getStringExtra("vidhansabha");
         String post = getIntent().getStringExtra("post");
         String taluka = getIntent().getStringExtra("taluka");
@@ -48,6 +48,7 @@ public class ShowDataActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         if(taluka == null){
+            mDatabase = FirebaseDatabase.getInstance();
             mRef = mDatabase.getReference(vidhansabha).child(post);
 
             mChildEventListener = new ChildEventListener() {
@@ -84,11 +85,12 @@ public class ShowDataActivity extends AppCompatActivity {
 
                 }
             };
-            //mRef.addChildEventListener(mChildEventListener);
+            mRef.addChildEventListener(mChildEventListener);
 
         }
 
         else if(taluka!=null) {
+            mDatabase = FirebaseDatabase.getInstance();
             mRef = mDatabase.getReference(vidhansabha).child(taluka+" तालुका").child(post);
 
             mChildEventListener = new ChildEventListener() {

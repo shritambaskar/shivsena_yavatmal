@@ -32,7 +32,7 @@ import java.util.List;
 public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteViewHolder>{
     private Context context;
     private List<ShivsenaDetails> mList;
-    String vidhansabha,post,taluka;
+    private String vidhansabha,post,taluka;
 
     public DeleteAdapter(Context context,List<ShivsenaDetails> mList,String vidhansabha,String post,String taluka){
         this.context = context;
