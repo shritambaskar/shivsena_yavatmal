@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -101,6 +102,19 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
                 final DialogPlus dialogPlus = DialogPlus.newDialog(context)
                         .setContentHolder(new ViewHolder(R.layout.update_data))
                         .setExpanded(true,650).create();
+
+
+               // dialogPlus.show();
+                View dialogView = dialogPlus.getHolderView();
+                EditText post = dialogView.findViewById(R.id.txt_post);
+                EditText name = dialogView.findViewById(R.id.txt_name);
+                EditText mobile = dialogView.findViewById(R.id.txt_mobile);
+                Button update = dialogView.findViewById(R.id.btn_update_data);
+
+                post.setText(data.getPost());
+                name.setText(data.getName());
+                mobile.setText(data.getMobile());
+
                 dialogPlus.show();
             }
         });
