@@ -42,7 +42,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/rounded"
-            android:gravity="center" />
+            android:gravity="center"
+            android:inputType="text"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -62,7 +63,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/rounded"
-
+            android:inputType="text"
             android:gravity="center" />
 
         <TextView
@@ -83,7 +84,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/rounded"
-            android:gravity="center" />
+            android:gravity="center"
+            android:inputType="number"/>
         <Button
             android:id="@+id/btn_update_data"
             android:layout_width="match_parent"
