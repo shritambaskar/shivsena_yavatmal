@@ -30,6 +30,7 @@ public class ShowDataActivity extends AppCompatActivity {
     private DatabaseReference mRef;
     private ChildEventListener mChildEventListener;
     private FirebaseDatabase mDatabase;
+    private ArrayList<String> mKeys= new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,12 +59,21 @@ public class ShowDataActivity extends AppCompatActivity {
                     ShivsenaDetails data = snapshot.getValue(ShivsenaDetails.class);
                     data.setUid(snapshot.getKey());
                     list.add(data);
+                    String key = snapshot.getKey();
+                    mKeys.add(key);
                     adapter.notifyDataSetChanged();
                 }
 
                 @Override
                 public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
 
+                    ShivsenaDetails data = snapshot.getValue(ShivsenaDetails.class);
+                    data.setUid(snapshot.getKey());
+                    String key = snapshot.getKey();
+                    int index = mKeys.indexOf(key);
+
+                    list.set(index,data);
+                    adapter.notifyDataSetChanged();
                 }
 
                 @Override
@@ -100,6 +110,8 @@ public class ShowDataActivity extends AppCompatActivity {
 
                     ShivsenaDetails data = snapshot.getValue(ShivsenaDetails.class);
                     data.setUid(snapshot.getKey());
+                    String key = snapshot.getKey();
+                    mKeys.add(key);
                     list.add(data);
                     adapter.notifyDataSetChanged();
                 }
@@ -107,6 +119,13 @@ public class ShowDataActivity extends AppCompatActivity {
                 @Override
                 public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
 
+                    ShivsenaDetails data = snapshot.getValue(ShivsenaDetails.class);
+                    data.setUid(snapshot.getKey());
+                    String key = snapshot.getKey();
+                    int index = mKeys.indexOf(key);
+
+                    list.set(index,data);
+                    adapter.notifyDataSetChanged();
                 }
 
                 @Override

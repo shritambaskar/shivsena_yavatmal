@@ -19,6 +19,7 @@ import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
@@ -130,7 +131,20 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
                             map.put("post",mypost.getText().toString());
                             map.put("name",name.getText().toString());
                             map.put("mobile",mobile.getText().toString());
-                            FirebaseDatabase.getInstance().getReference(vidhansabha).child(post).updateChildren(map);
+                            FirebaseDatabase.getInstance().getReference(vidhansabha).
+                                    child(post).child(userId).
+                                    updateChildren(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+                                    Toast.makeText(context, "Data Updated", Toast.LENGTH_SHORT).show();
+                                    dialogPlus.dismiss();
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Toast.makeText(context, "Data Not Updated", Toast.LENGTH_SHORT).show();
+                                }
+                            });
 
                         }
 
@@ -141,6 +155,24 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
                                 || post.equals("शाखा प्रमुख")|| post.equals("शाखा संघटीका")
                                 || post.equals("शाखा युवा अधिकारी")){
                             String userId = data.getUid();
+                            Map<String,Object> map = new HashMap<>();
+                            map.put("post",mypost.getText().toString());
+                            map.put("name",name.getText().toString());
+                            map.put("mobile",mobile.getText().toString());
+                            FirebaseDatabase.getInstance().getReference(vidhansabha).child(taluka+" तालुका").
+                                    child(post).child(userId).
+                                    updateChildren(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+                                    Toast.makeText(context, "Data Updated", Toast.LENGTH_SHORT).show();
+                                    dialogPlus.dismiss();
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Toast.makeText(context, "Data Not Updated", Toast.LENGTH_SHORT).show();
+                                }
+                            });
 
                         }
 
