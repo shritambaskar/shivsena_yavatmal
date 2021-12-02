@@ -45,7 +45,7 @@ public class ShowDataActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         list = new ArrayList<>();
         adapter = new DeleteAdapter(this,list,vidhansabha,post,taluka);
-        recyclerView.setAdapter(adapter);
+
 
         if(taluka == null){
             mDatabase = FirebaseDatabase.getInstance();
@@ -85,6 +85,7 @@ public class ShowDataActivity extends AppCompatActivity {
 
                 }
             };
+            recyclerView.setAdapter(adapter);
             mRef.addChildEventListener(mChildEventListener);
 
         }
@@ -127,6 +128,7 @@ public class ShowDataActivity extends AppCompatActivity {
 
                 }
             };
+            recyclerView.setAdapter(adapter);
             mRef.addChildEventListener(mChildEventListener);
         }
         //mRef.addChildEventListener(mChildEventListener);
