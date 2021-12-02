@@ -37,5 +37,6 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation 'orhanobut:dialogplus:1.11@aar'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+
 }

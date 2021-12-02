@@ -10,75 +10,82 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="28sp"
-            android:gravity="center"
             android:background="@color/shivsena"
+            android:gravity="center"
+            android:text="Update Details"
             android:textColor="@color/white"
-            android:text="Update Details"/>
+            android:textSize="28sp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="22sp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:textStyle="bold"
+            android:gravity="center"
+            android:text="पद"
             android:textColor="@color/shivsena"
-            android:text="पद"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/txt_post"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/rounded"
-            android:gravity="center"
-            android:id="@+id/txt_post"/>
+            android:gravity="center" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="22sp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:textStyle="bold"
+            android:gravity="center"
+            android:text="नाव"
             android:textColor="@color/shivsena"
-            android:text="नाव"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/txt_name"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/rounded"
-            android:gravity="center"
 
-            android:id="@+id/txt_name"/>
+            android:gravity="center" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="22sp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:textStyle="bold"
+            android:gravity="center"
+            android:text="दुरध्वनि"
             android:textColor="@color/shivsena"
-            android:text="दुरध्वनि"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/txt_mobile"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/rounded"
-            android:gravity="center"
-            android:id="@+id/txt_mobile"/>
+            android:gravity="center" />
+
+
 
     </LinearLayout>
 

@@ -22,6 +22,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.orhanobut.dialogplus.DialogPlus;
+import com.orhanobut.dialogplus.ViewHolder;
 import com.shivsena.yavatmal.R;
 import com.shivsena.yavatmal.adapter.ShivsenaAdapter;
 import com.shivsena.yavatmal.model.ShivsenaDetails;
@@ -93,6 +95,15 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
                 }
             }
         });
+        holder.update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final DialogPlus dialogPlus = DialogPlus.newDialog(context)
+                        .setContentHolder(new ViewHolder(R.layout.update_data))
+                        .setExpanded(true,1200).create();
+                dialogPlus.show();
+            }
+        });
     }
     @Override
     public int getItemCount() {
@@ -102,7 +113,7 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
     public class DeleteViewHolder extends RecyclerView.ViewHolder{
 
         private TextView post,name,phone;
-        private Button delete;
+        private Button delete,update;
 
         public DeleteViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -110,6 +121,7 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
             name = (TextView) itemView.findViewById(R.id.del_name);
             phone = (TextView) itemView.findViewById(R.id.del_phone);
             delete = itemView.findViewById(R.id.btndelete);
+            update = itemView.findViewById(R.id.btnUpdate);
         }
     }
 
