@@ -108,12 +108,12 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
 
                // dialogPlus.show();
                 View dialogView = dialogPlus.getHolderView();
-                EditText post = dialogView.findViewById(R.id.txt_post);
+                EditText mypost = dialogView.findViewById(R.id.txt_post);
                 EditText name = dialogView.findViewById(R.id.txt_name);
                 EditText mobile = dialogView.findViewById(R.id.txt_mobile);
                 Button update = dialogView.findViewById(R.id.btn_update_data);
 
-                post.setText(data.getPost());
+                mypost.setText(data.getPost());
                 name.setText(data.getName());
                 mobile.setText(data.getMobile());
 
@@ -122,10 +122,28 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
                 update.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Map<String,Object> map = new HashMap<>();
-                        map.put("post",post.getText().toString());
-                        map.put("name",name.getText().toString());
-                        map.put("mobile",mobile.getText().toString());
+
+                        String post = data.getPost();
+                        if(post.equals("उपजिल्हा प्रमुख") || post.equals("उपजिल्हा संघटीका") || post.equals("उपजिल्हा युवा अधिकारी")){
+                            String userId = data.getUid();
+                            Map<String,Object> map = new HashMap<>();
+                            map.put("post",mypost.getText().toString());
+                            map.put("name",name.getText().toString());
+                            map.put("mobile",mobile.getText().toString());
+                            FirebaseDatabase.getInstance().getReference(vidhansabha).child(post).updateChildren(map);
+
+                        }
+
+                        if(post.equals("तालुका प्रमुख") || post.equals("तालुका संघटीका") || post.equals("तालुका युवा अधिकारी")
+                                || post.equals("उपतालुका प्रमुख") || post.equals("उपतालुका संघटीका")
+                                || post.equals("उपतालुका युवा अधिकारी")|| post.equals("विभाग प्रमुख")
+                                || post.equals("विभाग संघटीका")|| post.equals("विभाग युवा अधिकारी")
+                                || post.equals("शाखा प्रमुख")|| post.equals("शाखा संघटीका")
+                                || post.equals("शाखा युवा अधिकारी")){
+                            String userId = data.getUid();
+
+                        }
+
                     }
                 });
             }
