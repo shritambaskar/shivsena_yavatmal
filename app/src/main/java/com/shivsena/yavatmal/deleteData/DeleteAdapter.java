@@ -100,7 +100,7 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
             public void onClick(View view) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(context)
                         .setContentHolder(new ViewHolder(R.layout.update_data))
-                        .setExpanded(true,600).create();
+                        .setExpanded(true,700).create();
                 dialogPlus.show();
             }
         });
