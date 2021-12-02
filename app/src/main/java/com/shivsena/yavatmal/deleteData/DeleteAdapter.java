@@ -30,7 +30,9 @@ import com.shivsena.yavatmal.adapter.ShivsenaAdapter;
 import com.shivsena.yavatmal.model.ShivsenaDetails;
 import com.shivsena.yavatmal.model.Utils;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteViewHolder>{
     private Context context;
@@ -116,6 +118,16 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
                 mobile.setText(data.getMobile());
 
                 dialogPlus.show();
+
+                update.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Map<String,Object> map = new HashMap<>();
+                        map.put("post",post.getText().toString());
+                        map.put("name",name.getText().toString());
+                        map.put("mobile",mobile.getText().toString());
+                    }
+                });
             }
         });
     }
