@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/drawable/rounded.xml" value="0.17357859531772576" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_add_gaon.xml" value="0.16486486486486487" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_add_taluka.xml" value="0.16486486486486487" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.16486486486486487" />
@@ -17,7 +18,9 @@
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_umerkhed_vidhansabha.xml" value="0.16486486486486487" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_yavatmal_details.xml" value="0.16321070234113713" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/activity_yavatmal_vidhansabha.xml" value="0.16486486486486487" />
+        <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/delete_data.xml" value="0.16486486486486487" />
         <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/shivsena_data.xml" value="0.16321070234113713" />
+        <entry key="..\:/Android College Projects/shivsena_yavatmal/app/src/main/res/layout/update_data.xml" value="0.16486486486486487" />
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/drawable/rounded_bt.xml" value="0.13289902280130292" />
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/drawable/rounded_et.xml" value="0.13289902280130292" />
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/drawable/rounded_spinner.xml" value="0.13783783783783785" />
@@ -41,12 +44,11 @@
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/activity_yavatmal_details.xml" value="0.12401315789473684" />
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/activity_yavatmal_taluka_details.xml" value="0.12736486486486487" />
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/activity_yavatmal_vidhansabha.xml" value="0.12401315789473684" />
-        <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/delete_data.xml" value="0.12736486486486487" />
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/shivsena_data.xml" value="0.12736486486486487" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
