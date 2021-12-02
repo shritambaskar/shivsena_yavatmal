@@ -95,12 +95,12 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
                 }
             }
         });
-        holder.update.setOnClickListener(new View.OnClickListener() {
+        holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(context)
                         .setContentHolder(new ViewHolder(R.layout.update_data))
-                        .setExpanded(true,700).create();
+                        .setExpanded(true,650).create();
                 dialogPlus.show();
             }
         });
@@ -113,7 +113,7 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
     public class DeleteViewHolder extends RecyclerView.ViewHolder{
 
         private TextView post,name,phone;
-        private Button delete,update;
+        private Button delete,edit;
 
         public DeleteViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -121,7 +121,7 @@ public class DeleteAdapter extends RecyclerView.Adapter<DeleteAdapter.DeleteView
             name = (TextView) itemView.findViewById(R.id.del_name);
             phone = (TextView) itemView.findViewById(R.id.del_phone);
             delete = itemView.findViewById(R.id.btndelete);
-            update = itemView.findViewById(R.id.btnUpdate);
+            edit = itemView.findViewById(R.id.btnEdit);
         }
     }
 

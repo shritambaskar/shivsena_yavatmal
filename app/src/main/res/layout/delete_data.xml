@@ -49,11 +49,11 @@
             android:layout_marginTop="10dp">
 
             <Button
-                android:id="@+id/btnUpdate"
+                android:id="@+id/btnEdit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_bt"
-                android:text="Update"
+                android:text="Edit"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:textColor="@color/background" />
