@@ -12,6 +12,9 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
+    //Hello this is Comment from Ecsion
+    public static final String mac = "Mac";
+
     public static final String MY_NAME ="user";
     public static final String FILE_NAME="login_credential";
 
