@@ -78,6 +78,12 @@
         <entry key="app/src/main/res/layout-sw600dp/activity_umerkhed_details.xml" value="0.183984375" />
         <entry key="app/src/main/res/layout-sw600dp/activity_umerkhed_taluka_details.xml" value="0.183984375" />
         <entry key="app/src/main/res/layout-sw600dp/activity_umerkhed_vidhansabha.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_yavatmal_details.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_yavatmal_taluka_details.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_yavatmal_vidhansabha.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/delete_data.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/shivsena_data.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/update_data.xml" value="0.183984375" />
         <entry key="app/src/main/res/layout/activity_add_gaon.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_add_taluka.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/activity_admin.xml" value="0.165" />
@@ -97,7 +103,12 @@
         <entry key="app/src/main/res/layout/activity_umerkhed_details.xml" value="0.15493421052631579" />
         <entry key="app/src/main/res/layout/activity_umerkhed_taluka_details.xml" value="0.15493421052631579" />
         <entry key="app/src/main/res/layout/activity_umerkhed_vidhansabha.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_yavatmal_details.xml" value="0.15912162162162163" />
+        <entry key="app/src/main/res/layout/activity_yavatmal_taluka_details.xml" value="0.15912162162162163" />
+        <entry key="app/src/main/res/layout/activity_yavatmal_vidhansabha.xml" value="0.15912162162162163" />
+        <entry key="app/src/main/res/layout/delete_data.xml" value="0.15912162162162163" />
         <entry key="app/src/main/res/layout/my.xml" value="0.2453125" />
+        <entry key="app/src/main/res/layout/shivsena_data.xml" value="0.15912162162162163" />
         <entry key="app/src/main/res/layout/update_data.xml" value="0.183984375" />
       </map>
     </option>
