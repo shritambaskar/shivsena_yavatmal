@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AddGaonActivity"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/gaon_vidhan_spinner"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/rounded_et"
+        android:elevation="10dp"
+        android:entries="@array/taluka"
+        android:paddingStart="50dp"
+        android:theme="@style/SpinnerTab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <Spinner
+        android:id="@+id/gaon_taluka_spinner"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_et"
+        android:elevation="10dp"
+        android:textSize="80sp"
+        android:paddingStart="50dp"
+        android:theme="@style/SpinnerTab"
+        app:layout_constraintEnd_toEndOf="@+id/gaon_vidhan_spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gaon_vidhan_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/gaon_vidhan_spinner" />
+
+    <EditText
+        android:id="@+id/et_add_gaon"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_et"
+        android:drawableStart="@drawable/ic_forward_tab"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/shivsena"
+        android:elevation="10dp"
+        android:hint="क्रुपया गावाचे नाव टाका"
+        android:inputType="text"
+        android:textSize="32sp"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/shivsena"
+        app:layout_constraintEnd_toEndOf="@+id/gaon_taluka_spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gaon_taluka_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/gaon_taluka_spinner" />
+
+    <Button
+        android:id="@+id/btn_add_gaon"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/rounded_bt"
+        android:backgroundTint="@color/shivsena"
+        android:elevation="10dp"
+        android:textSize="32dp"
+        android:text="GO"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/et_add_gaon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_add_gaon"
+        app:layout_constraintTop_toTopOf="@+id/et_add_gaon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

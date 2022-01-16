@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".yavtmalvidhansabha.DigrasTalukaDetailsActivity">
+
+    <TextView
+        android:id="@+id/digras_taluka_name"
+        android:layout_width="0dp"
+        android:paddingStart="0dp"
+        android:layout_height="60dp"
+        android:text="क्रुपया तालुका निवडा"
+        android:textColor="@color/shivsena"
+        android:textSize="32sp"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Spinner
+        android:id="@+id/digras_taluka_spinner"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:theme="@style/SpinnerTab"
+        android:background="@drawable/rounded_et"
+        android:paddingStart="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/digras_taluka_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/digras_taluka_name"
+        app:layout_constraintTop_toBottomOf="@+id/digras_taluka_name" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/digras_taluka_recycleView"
+        android:layout_width="730dp"
+        android:layout_height="942dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/digras_taluka_spinner"
+        app:layout_constraintStart_toStartOf="@+id/digras_taluka_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/digras_taluka_spinner"
+        app:layout_constraintVertical_bias="0.448" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

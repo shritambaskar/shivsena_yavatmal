@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".yavtmalvidhansabha.UmerkhedVidhansabhaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="193dp"
+            android:src="@drawable/shivsena_logo_new"
+            android:layout_height="182dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/umerkhed_upjilha_pramukh"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_upjilha_pramukh"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_upjilha_pramukh"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139" />
+        <!--android:src="@drawable/shiv_sena_logo"-->
+
+        <TextView
+            android:id="@+id/tv_umerkhed_vidhansabha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="48sp"
+            android:layout_marginBottom="7dp"
+            android:text="उमरखेड विधानसभा"
+            android:gravity="center"
+            android:textColor="@color/shivsena"
+            android:textStyle="bold"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/umerkhed_upjilha_pramukh"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <Button
+            android:id="@+id/umerkhed_upjilha_pramukh"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_bt"
+            android:text="उपजिल्हा प्रमुख"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.179" />
+
+        <Button
+            android:id="@+id/umerkhed_upjilha_sanghtika"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="उपजिल्हा संघटीका"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_upjilha_pramukh"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_upjilha_pramukh"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_upjilha_pramukh" />
+
+        <Button
+            android:id="@+id/umerkhed_upjilha_yuva_adhikari"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="उपजिल्हा युवा अधिकारी"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_upjilha_sanghtika"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_upjilha_sanghtika"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_upjilha_sanghtika" />
+
+        <Button
+            android:id="@+id/umerkhed_taluka_pramukh"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="तालुका प्रमुख"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_upjilha_yuva_adhikari"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_upjilha_yuva_adhikari"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_upjilha_yuva_adhikari" />
+
+        <Button
+            android:id="@+id/umerkhed_taluka_sanghtika"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="तालुका संघटीका"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_taluka_pramukh"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_taluka_pramukh"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_taluka_pramukh" />
+
+        <Button
+            android:id="@+id/umerkhed_taluka_yuva_adhikari"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="तालुका युवा अधिकरी"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_taluka_sanghtika"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_taluka_sanghtika"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_taluka_sanghtika" />
+
+        <Button
+            android:id="@+id/umerkhed_uptaluka_pramukh"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="उपतालुका प्रमुख"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_taluka_yuva_adhikari"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_taluka_yuva_adhikari"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_taluka_yuva_adhikari" />
+
+        <Button
+            android:id="@+id/umerkhed_uptaluka_sanghtika"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="उपतालुका संघटीका"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_uptaluka_pramukh"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_uptaluka_pramukh"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_uptaluka_pramukh" />
+
+        <Button
+            android:id="@+id/umerkhed_uptaluka_yuva_adhikari"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="उपतालुका युवा अधिकरी"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_uptaluka_sanghtika"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_uptaluka_sanghtika"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_uptaluka_sanghtika" />
+
+        <Button
+            android:id="@+id/umerkhed_vibhag_pramukh"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="विभाग प्रमुख"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_uptaluka_yuva_adhikari"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_uptaluka_yuva_adhikari"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_uptaluka_yuva_adhikari" />
+
+        <Button
+            android:id="@+id/umerkhed_vibhag_sanghtika"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="विभाग संघटीका"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_vibhag_pramukh"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_vibhag_pramukh"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_vibhag_pramukh" />
+
+        <Button
+            android:id="@+id/umerkhed_vibhag_yuva_adhikari"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="विभाग युवा अधिकरी"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_vibhag_sanghtika"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_vibhag_sanghtika"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_vibhag_sanghtika" />
+
+        <Button
+            android:id="@+id/umerkhed_shakha_pramukh"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="शाखा प्रमुख"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_vibhag_yuva_adhikari"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_vibhag_yuva_adhikari"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_vibhag_yuva_adhikari" />
+
+        <Button
+            android:id="@+id/umerkhed_shakha_sanghtika"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="शाखा संघटीका"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_shakha_pramukh"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_shakha_pramukh"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_shakha_pramukh" />
+
+        <Button
+            android:id="@+id/umerkhed_shakha_yuva_adhikari"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="32sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_bt"
+            android:text="शाखा युवा अधिकरी"
+            android:textColor="@color/white"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/umerkhed_shakha_sanghtika"
+            app:layout_constraintStart_toStartOf="@+id/umerkhed_shakha_sanghtika"
+            app:layout_constraintTop_toBottomOf="@+id/umerkhed_shakha_sanghtika" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

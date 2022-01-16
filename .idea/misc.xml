@@ -44,7 +44,61 @@
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/delete_data.xml" value="0.12736486486486487" />
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/shivsena_data.xml" value="0.12736486486486487" />
         <entry key="..\:/Shivsena_Project/Shivsena_Yavatmal/app/src/main/res/layout/update_data.xml" value="0.12736486486486487" />
-        <entry key="app/src/main/res/layout/activity_add_gaon.xml" value="0.2453125" />
+        <entry key="app/src/main/res/drawable/button_bg.xml" value="0.16959459459459458" />
+        <entry key="app/src/main/res/drawable/ic_call.xml" value="0.16959459459459458" />
+        <entry key="app/src/main/res/drawable/ic_expand.xml" value="0.16959459459459458" />
+        <entry key="app/src/main/res/drawable/ic_forward.xml" value="0.16959459459459458" />
+        <entry key="app/src/main/res/drawable/ic_name.xml" value="0.16959459459459458" />
+        <entry key="app/src/main/res/drawable/ic_name_tab.xml" value="0.16959459459459458" />
+        <entry key="app/src/main/res/drawable/ic_password.xml" value="0.16959459459459458" />
+        <entry key="app/src/main/res/drawable/ic_phone.xml" value="0.16513157894736843" />
+        <entry key="app/src/main/res/drawable/ic_printer.xml" value="0.16513157894736843" />
+        <entry key="app/src/main/res/drawable/ic_printer_tab.xml" value="0.16513157894736843" />
+        <entry key="app/src/main/res/drawable/ic_select.xml" value="0.16513157894736843" />
+        <entry key="app/src/main/res/drawable/ic_select_tab.xml" value="0.16513157894736843" />
+        <entry key="app/src/main/res/drawable/rounded.xml" value="0.16513157894736843" />
+        <entry key="app/src/main/res/drawable/rounded_bt.xml" value="0.16513157894736843" />
+        <entry key="app/src/main/res/drawable/rounded_et.xml" value="0.16513157894736843" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_add_gaon.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_add_taluka.xml" value="0.25" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_admin.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_admin_dashboard.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_admin_home.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_admin_yavtamal.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_digras_details.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_digras_taluka_details.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_digras_vidhansabha.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_home.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_login.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_member_delete.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_next.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_no_internet_connection.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_show_data.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_splash_screen.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_umerkhed_details.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_umerkhed_taluka_details.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_umerkhed_vidhansabha.xml" value="0.183984375" />
+        <entry key="app/src/main/res/layout/activity_add_gaon.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_add_taluka.xml" value="0.2453125" />
+        <entry key="app/src/main/res/layout/activity_admin.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_admin_dashboard.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_admin_home.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_admin_yavtamal.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_digras_details.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_digras_taluka_details.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_digras_vidhansabha.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_member_delete.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_next.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_no_internet_connection.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_show_data.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_umerkhed_details.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_umerkhed_taluka_details.xml" value="0.15493421052631579" />
+        <entry key="app/src/main/res/layout/activity_umerkhed_vidhansabha.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/my.xml" value="0.2453125" />
+        <entry key="app/src/main/res/layout/update_data.xml" value="0.183984375" />
       </map>
     </option>
   </component>

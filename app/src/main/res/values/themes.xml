@@ -19,5 +19,16 @@
         <item name="android:paddingEnd">0dp</item>
         <item name="android:textColor">@color/shivsena</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="SpinnerTab" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/shivsena</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">32sp</item>
+
     </style>
 </resources>

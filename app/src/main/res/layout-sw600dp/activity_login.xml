@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_addPlace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Please Login Here"
+        android:textColor="@color/shivsena"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_et"
+        android:drawableStart="@drawable/ic_name_tab"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/shivsena"
+        android:elevation="10dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:textColor="@color/shivsena"
+        android:textColorHint="@color/shivsena"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_addPlace"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_addPlace"
+        app:layout_constraintTop_toBottomOf="@+id/tv_addPlace" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_et"
+        android:drawableStart="@drawable/ic_password_tab"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/shivsena"
+        android:elevation="10dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textSize="32sp"
+        android:paddingStart="20dp"
+        android:textColor="@color/shivsena"
+        android:textColorHint="@color/shivsena"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_bt"
+        android:elevation="10dp"
+        android:text="GO"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="222dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_addPlace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373"
+        app:srcCompat="@drawable/shivsena_logo_new" />
+    <!--"-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

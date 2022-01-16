@@ -9,33 +9,32 @@
 
     <ImageView
         android:id="@+id/iv_jilha_pramukh"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="761dp"
+        android:layout_height="262dp"
         android:elevation="10dp"
         android:src="@drawable/shivsena_logo_new"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201" />
+        app:layout_constraintVertical_bias="0.248" />
 
     <TextView
         android:id="@+id/tv_jilha_pramukh"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_width="756dp"
+        android:layout_height="133dp"
         android:layout_marginEnd="24dp"
         android:elevation="10dp"
         android:gravity="center"
         android:text="यवतमाळ जिल्हा\nजिल्हाप्रमुख\nश्री.पराग पिंगळे"
         android:textColor="@color/shivsena"
-        android:textSize="24sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_jilha_pramukh"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/iv_jilha_pramukh"
         app:layout_constraintTop_toBottomOf="@+id/iv_jilha_pramukh"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.045" />
 </androidx.constraintlayout.widget.ConstraintLayout>
