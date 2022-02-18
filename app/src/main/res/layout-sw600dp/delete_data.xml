@@ -56,6 +56,7 @@
                 android:text="Edit"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
+                android:textSize="32sp"
                 android:textColor="@color/background" />
             <Button
                 android:id="@+id/btndelete"
@@ -65,6 +66,7 @@
                 android:layout_marginStart="10dp"
                 android:background="@drawable/rounded_bt"
                 android:text="Delete"
+                android:textSize="32sp"
                 android:textColor="@color/background" />
 
 
