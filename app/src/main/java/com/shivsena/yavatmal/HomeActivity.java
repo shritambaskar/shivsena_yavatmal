@@ -53,7 +53,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,AdminActivity.class));
                 break;
             case R.id.print:
-                Uri uriUrl = Uri.parse(url);
+                Uri uriUrl = Uri.parse("shivsena.ikal.in");
                 Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
                 startActivity(launchBrowser);
                 break;
