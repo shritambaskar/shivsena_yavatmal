@@ -7,13 +7,12 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="$USER_HOME$/.android/avd/Ecsion_Tab.avd" />
+            <value value="$USER_HOME$/.android/avd/Ecsion.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-01-16T07:11:04.176327Z" />
-    <multipleDevicesSelectedInDropDown value="true" />
+    <timeTargetWasSelectedWithDropDown value="2022-02-18T07:08:28.144886Z" />
     <targetsSelectedWithDialog>
       <Target>
         <type value="QUICK_BOOT_TARGET" />
